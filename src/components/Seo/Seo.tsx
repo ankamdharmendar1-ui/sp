@@ -5,11 +5,12 @@ interface SeoProps {
   title: string
   description: string
   path: string
+  faq?: Array<{ question: string; answer: string }>
 }
 
-export function Seo({ title, description, path }: SeoProps) {
+export function Seo({ title, description, path, faq }: SeoProps) {
   const url = `${SITE_DOMAIN}${path}`
-  const fullTitle = `${title} | ${SITE_NAME}`
+  const fullTitle = path === '/' ? `${SITE_NAME} - Free Online Random Picker Wheel` : `${title} | ${SITE_NAME}`
 
   useEffect(() => {
     document.title = fullTitle
@@ -22,22 +23,86 @@ export function Seo({ title, description, path }: SeoProps) {
     upsert('name', 'twitter:card', 'summary_large_image')
     upsert('name', 'twitter:title', fullTitle)
     upsert('name', 'twitter:description', description)
+    
     const canonical = ensure('link', 'rel', 'canonical')
     canonical.setAttribute('href', url)
+
+    // Build WebApplication Schema
+    const appSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: SITE_NAME,
+      url: SITE_DOMAIN,
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'All',
+      description,
+      browserRequirements: 'Requires JavaScript. Requires HTML5.',
+      softwareVersion: '2.0',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+      },
+    }
+
+    // Build Organization Schema
+    const orgSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_DOMAIN,
+      logo: `${SITE_DOMAIN}/favicon.svg`,
+    }
+
+    // Build Breadcrumb Schema
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: SITE_DOMAIN,
+        },
+        ...(path !== '/'
+          ? [
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: title,
+                item: url,
+              },
+            ]
+          : []),
+      ],
+    }
+
+    // Combine Schemas into Graph
+    const schemaGraph: Array<Record<string, unknown>> = [appSchema, orgSchema, breadcrumbSchema]
+
+    if (faq && faq.length > 0) {
+      schemaGraph.push({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faq.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer,
+          },
+        })),
+      })
+    }
 
     const jsonLd = ensure('script', 'id', 'rpw-jsonld')
     jsonLd.setAttribute('type', 'application/ld+json')
     jsonLd.textContent = JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'WebApplication',
-      name: SITE_NAME,
-      url: SITE_DOMAIN,
-      applicationCategory: 'UtilitiesApplication',
-      operatingSystem: 'Any',
-      description,
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      '@graph': schemaGraph,
     })
-  }, [description, fullTitle, url])
+  }, [description, faq, fullTitle, path, url])
 
   return null
 }
@@ -62,3 +127,4 @@ function ensure(tag: 'link' | 'script', attr: string, value: string) {
   }
   return el
 }
+
