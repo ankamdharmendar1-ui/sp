@@ -1,13 +1,8 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Seo } from '../../components/Seo/Seo'
 import { WHEEL_TEMPLATES } from '../../data/templates'
-import { useWheel } from '../../hooks/useWheelStore'
-import { makeWheel } from '../../data/defaults'
 
 export function RandomWheelPage() {
-  const navigate = useNavigate()
-  const { wheels, switchWheel } = useWheel()
-
   const categories = [
     { title: 'Education & Classroom', templates: WHEEL_TEMPLATES.filter(t => t.category === 'education') },
     { title: 'Food & Dining', templates: WHEEL_TEMPLATES.filter(t => t.category === 'food') },
