@@ -103,10 +103,10 @@ export function AppShell() {
                             navigate(tool.to)
                           }
                         }}
-                        className="flex items-center gap-3 rounded-xl p-2.5 text-left text-sm font-extrabold text-[#10232b] hover:bg-[#f4efe4] transition-colors"
+                        className="flex items-center gap-3 rounded-xl p-2.5 text-left text-xs font-bold text-[#10232b] hover:bg-[#f4efe4] transition-colors"
                       >
                         <span className="text-xl shrink-0">{tool.icon}</span>
-                        <span className="truncate tracking-tight">{tool.label}</span>
+                        <span className="truncate tracking-normal font-semibold">{tool.label}</span>
                       </button>
                     ))}
                   </div>
