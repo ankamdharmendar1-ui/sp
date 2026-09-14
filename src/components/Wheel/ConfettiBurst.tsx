@@ -17,7 +17,7 @@ interface Particle {
   shape: 'rect' | 'circle' | 'star'
 }
 
-const COLORS = ['#e85d4c', '#1B6B6B', '#F2CC8F', '#E07A5F', '#81B29A', '#3D405B', '#FFD166', '#EF476F', '#06D6A0', '#118AB2']
+const COLORS = ['#e85d4c', '#1B6B6B', '#F2CC8F', '#E07A5F', '#81B29A', '#3D405B', '#FFD166', '#EF476F', '#06D6A0', '#118AB2', '#9B5DE5', '#F15BB5']
 
 export function ConfettiBurst({ active }: ConfettiBurstProps) {
   const ref = useRef<HTMLCanvasElement>(null)
@@ -30,7 +30,7 @@ export function ConfettiBurst({ active }: ConfettiBurstProps) {
     if (!ctx) return
     let frame = 0
     const dpr = Math.min(window.devicePixelRatio || 1, 2)
-    
+
     const resize = () => {
       canvas.width = window.innerWidth * dpr
       canvas.height = window.innerHeight * dpr
@@ -40,25 +40,29 @@ export function ConfettiBurst({ active }: ConfettiBurstProps) {
     const w = window.innerWidth
     const h = window.innerHeight
 
-    // Generate 160 festive party papers and sparkles starting above top of the page
-    const particles: Particle[] = Array.from({ length: 160 }, () => ({
-      x: Math.random() * w,
-      y: -20 - Math.random() * (h * 0.4),
-      vx: (Math.random() - 0.5) * 4,
-      vy: Math.random() * 4 + 3,
-      w: 6 + Math.random() * 8,
-      h: 8 + Math.random() * 10,
-      rot: Math.random() * Math.PI * 2,
-      vr: (Math.random() - 0.5) * 0.2,
-      color: COLORS[Math.floor(Math.random() * COLORS.length)],
-      shape: Math.random() > 0.4 ? 'rect' : Math.random() > 0.5 ? 'circle' : 'star',
-    }))
+    // Generate 220 high-velocity particles popping from top and middle across whole screen
+    const particles: Particle[] = Array.from({ length: 220 }, () => {
+      const isTopExplosion = Math.random() > 0.3
+      return {
+        x: isTopExplosion ? Math.random() * w : w / 2 + (Math.random() - 0.5) * 300,
+        y: isTopExplosion ? -10 - Math.random() * 100 : h * 0.4,
+        vx: (Math.random() - 0.5) * (isTopExplosion ? 8 : 24),
+        vy: isTopExplosion ? Math.random() * 8 + 8 : Math.random() * -20 - 6,
+        w: 8 + Math.random() * 10,
+        h: 10 + Math.random() * 12,
+        rot: Math.random() * Math.PI * 2,
+        vr: (Math.random() - 0.5) * 0.4,
+        color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        shape: Math.random() > 0.3 ? 'rect' : Math.random() > 0.5 ? 'circle' : 'star',
+      }
+    })
 
     const tick = () => {
       ctx.clearRect(0, 0, w, h)
       particles.forEach((p) => {
+        p.vy += 0.35 // Fast gravity pull downwards
+        p.x += p.vx
         p.y += p.vy
-        p.x += Math.sin(p.y * 0.02) * 1.5 + p.vx
         p.rot += p.vr
 
         ctx.save()
@@ -73,7 +77,7 @@ export function ConfettiBurst({ active }: ConfettiBurstProps) {
           ctx.arc(0, 0, p.w / 2, 0, Math.PI * 2)
           ctx.fill()
         } else {
-          // Sparkle / Star shape
+          // Star
           ctx.beginPath()
           for (let i = 0; i < 5; i++) {
             ctx.lineTo(Math.cos(((18 + i * 72) * Math.PI) / 180) * p.w, -Math.sin(((18 + i * 72) * Math.PI) / 180) * p.w)
@@ -89,7 +93,7 @@ export function ConfettiBurst({ active }: ConfettiBurstProps) {
     }
 
     frame = requestAnimationFrame(tick)
-    const stop = window.setTimeout(() => cancelAnimationFrame(frame), 3500)
+    const stop = window.setTimeout(() => cancelAnimationFrame(frame), 3000)
     return () => {
       cancelAnimationFrame(frame)
       window.clearTimeout(stop)
@@ -100,7 +104,7 @@ export function ConfettiBurst({ active }: ConfettiBurstProps) {
   return (
     <canvas
       ref={ref}
-      className="pointer-events-none fixed inset-0 z-50 h-full w-full"
+      className="pointer-events-none fixed inset-0 z-[100] h-full w-full"
       aria-hidden
     />
   )
