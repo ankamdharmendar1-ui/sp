@@ -1,4 +1,25 @@
+# Real Picker Wheel - robots.txt
+# https://realpickerwheel.com
+
 User-agent: *
 Allow: /
 
+# Disallow non-content paths
+Disallow: /api/
+Disallow: /*.json$
+
+# Major search engine bots - full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
 Sitemap: https://realpickerwheel.com/sitemap.xml

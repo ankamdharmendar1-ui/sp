@@ -1,12 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://realpickerwheel.com/</loc></url>
-  <url><loc>https://realpickerwheel.com/random-wheel</loc></url>
-  <url><loc>https://realpickerwheel.com/random-name-picker</loc></url>
-  <url><loc>https://realpickerwheel.com/wheel-spinner</loc></url>
-  <url><loc>https://realpickerwheel.com/how-to-use</loc></url>
-  <url><loc>https://realpickerwheel.com/about</loc></url>
-  <url><loc>https://realpickerwheel.com/contact</loc></url>
-  <url><loc>https://realpickerwheel.com/privacy</loc></url>
-  <url><loc>https://realpickerwheel.com/terms</loc></url>
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://realpickerwheel.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/random-wheel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/random-name-picker</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/wheel-spinner</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/how-to-use</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Education Category -->
+  <url>
+    <loc>https://realpickerwheel.com/education/random-student-generator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/education/classroom-group-picker</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Food Category -->
+  <url>
+    <loc>https://realpickerwheel.com/food/what-to-eat-wheel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/food/fast-food-picker</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gaming Category -->
+  <url>
+    <loc>https://realpickerwheel.com/gaming/fortnite-drop-picker</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/gaming/apex-legends-picker</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Games & Party Category -->
+  <url>
+    <loc>https://realpickerwheel.com/games/truth-or-dare-wheel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://realpickerwheel.com/games/yes-no-picker-wheel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
+
