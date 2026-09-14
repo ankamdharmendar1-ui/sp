@@ -1,5 +1,5 @@
 # Real Picker Wheel - robots.txt
-# https://realpickerwheel.com
+# https://www.realpickerwheel.com
 
 User-agent: *
 Allow: /
@@ -22,4 +22,4 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://realpickerwheel.com/sitemap.xml
+Sitemap: https://www.realpickerwheel.com/sitemap.xml

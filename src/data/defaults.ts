@@ -4,7 +4,7 @@ import { createId } from '../utils/id'
 import { sanitizeLabel } from '../utils/sanitize'
 
 export const SITE_NAME = 'Real Picker Wheel'
-export const SITE_DOMAIN = 'https://realpickerwheel.com'
+export const SITE_DOMAIN = 'https://www.realpickerwheel.com'
 
 export const defaultSettings = (): WheelSettings => ({
   colorTheme: 'aurora',
