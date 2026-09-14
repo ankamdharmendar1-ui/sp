@@ -3,7 +3,7 @@ import type { StoredState, WheelConfig } from '../types/wheel'
 import { colorForIndex } from './colors'
 import { sanitizeLabel, sanitizeName, normalizeWeight, clampEntryCount } from './sanitize'
 
-const KEY = 'rpw.v3'
+const KEY = 'rpw.v4'
 
 function isEntry(value: unknown): boolean {
   if (!value || typeof value !== 'object') return false
