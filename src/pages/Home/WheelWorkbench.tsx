@@ -12,6 +12,8 @@ import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion'
 import { useWheel } from '../../hooks/useWheelStore'
 import type { WheelEntry } from '../../types/wheel'
 
+import { EmbedModal } from '../../components/EmbedDialog/EmbedModal'
+
 const BACKGROUNDS = {
   cream: 'bg-[#f4efe4] text-[#10232b]',
   slate: 'bg-[#dbe3ea] text-[#10232b]',
@@ -45,6 +47,7 @@ export function WheelWorkbench({
   } = useWheel()
   const reducedMotion = usePrefersReducedMotion()
   const [shareOpen, setShareOpen] = useState(false)
+  const [embedOpen, setEmbedOpen] = useState(false)
   const [showConfetti, setShowConfetti] = useState(false)
   const s = active.settings
   const canSpin = active.entries.length > 0 && !spinning
@@ -111,7 +114,7 @@ export function WheelWorkbench({
               onSpinEnd={onSpinEnd}
             />
             <div className="mx-auto mt-4 max-w-sm space-y-2 sm:mt-5">
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-3 gap-2">
                 <ToolButton onClick={resetWheel} disabled={spinning}>
                   Reset
                 </ToolButton>
@@ -131,8 +134,16 @@ export function WheelWorkbench({
                 >
                   Names
                 </ToolButton>
+                <ToolButton onClick={() => setEmbedOpen(true)} disabled={spinning}>
+                  Embed
+                </ToolButton>
               </div>
             </div>
+            <EmbedModal
+              isOpen={embedOpen}
+              onClose={() => setEmbedOpen(false)}
+              wheelName={active.name}
+            />
             <p className="mt-3 text-center text-xs text-[#5c6a72] sm:text-sm">
               {active.entries.length} {active.entries.length === 1 ? 'entry' : 'entries'}
               {s.weightedMode ? ' · weighted mode on' : ''}

@@ -4,6 +4,7 @@ import { WheelProvider } from './hooks/useWheelStore'
 import { HomePage } from './pages/Home/HomePage'
 import { AboutPage, ContactPage, HowToUsePage, PrivacyPage, TermsPage } from './pages/Info/ContentPages'
 import { RandomNamePickerPage, RandomWheelPage, WheelSpinnerPage } from './pages/Tools/ToolPages'
+import { DynamicWheelPage } from './pages/Tools/DynamicWheelPage'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/random-wheel" element={<RandomWheelPage />} />
           <Route path="/random-name-picker" element={<RandomNamePickerPage />} />
           <Route path="/wheel-spinner" element={<WheelSpinnerPage />} />
+          <Route path="/:category/:slug" element={<DynamicWheelPage />} />
           <Route path="/how-to-use" element={<HowToUsePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />

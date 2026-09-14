@@ -181,10 +181,11 @@ export function AppShell() {
             <div className="space-y-2.5">
               <h4 className="text-xs font-black uppercase tracking-wider text-[#10232b]">Popular Wheels</h4>
               <ul className="space-y-2 text-xs font-semibold text-[#3e4c59]">
-                <li><NavLink to="/" className="hover:text-[#1B6B6B] transition-colors">Yes or No Wheel</NavLink></li>
-                <li><NavLink to="/random-name-picker" className="hover:text-[#1B6B6B] transition-colors">Random Name Picker</NavLink></li>
-                <li><NavLink to="/wheel-spinner" className="hover:text-[#1B6B6B] transition-colors">Wheel Spinner</NavLink></li>
-                <li><NavLink to="/random-wheel" className="hover:text-[#1B6B6B] transition-colors">Custom Prize Wheel</NavLink></li>
+                <li><NavLink to="/games/yes-no-picker-wheel" className="hover:text-[#1B6B6B] transition-colors">Yes or No Wheel</NavLink></li>
+                <li><NavLink to="/education/random-student-generator" className="hover:text-[#1B6B6B] transition-colors">Student Name Picker</NavLink></li>
+                <li><NavLink to="/food/what-to-eat-wheel" className="hover:text-[#1B6B6B] transition-colors">What to Eat Wheel</NavLink></li>
+                <li><NavLink to="/gaming/fortnite-drop-picker" className="hover:text-[#1B6B6B] transition-colors">Fortnite Drop Picker</NavLink></li>
+                <li><NavLink to="/games/truth-or-dare-wheel" className="hover:text-[#1B6B6B] transition-colors">Truth or Dare Wheel</NavLink></li>
               </ul>
             </div>
 
