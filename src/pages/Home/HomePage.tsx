@@ -32,8 +32,8 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="Random picker wheel"
-        description="Create a random picker wheel, add names or options, and spin to choose fairly. Weighted odds, history, and shareable links — no account needed."
+        title="Picker Wheel - Spin the Wheel to Decide a Random Choice"
+        description="Free random picker wheel to decide a random choice fairly. Insert names, numbers, or choices, spin the wheel with 60 FPS animation and sound effects, and pick a random winner instantly."
         path="/"
         faq={HOME_FAQS}
       />

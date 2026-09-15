@@ -10,7 +10,7 @@ interface SeoProps {
 
 export function Seo({ title, description, path, faq }: SeoProps) {
   const url = `${SITE_DOMAIN}${path}`
-  const fullTitle = path === '/' ? `${SITE_NAME} - Free Online Random Picker Wheel` : `${title} | ${SITE_NAME}`
+  const fullTitle = path === '/' ? `${title} | ${SITE_NAME}` : `${title} | ${SITE_NAME}`
 
   useEffect(() => {
     document.title = fullTitle
