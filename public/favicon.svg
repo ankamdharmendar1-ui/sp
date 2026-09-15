@@ -1,7 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <circle cx="16" cy="16" r="15" fill="#10232b"/>
-  <path d="M16 16 L16 3 A13 13 0 0 1 27.3 22.5 Z" fill="#1B6B6B"/>
-  <path d="M16 16 L27.3 22.5 A13 13 0 0 1 4.7 22.5 Z" fill="#e85d4c"/>
-  <path d="M16 16 L4.7 22.5 A13 13 0 0 1 16 3 Z" fill="#F2CC8F"/>
-  <circle cx="16" cy="16" r="4" fill="#fffaf3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring Shadow & Base -->
+  <circle cx="32" cy="32" r="30" fill="#10232b" filter="url(#shadow)"/>
+  <circle cx="32" cy="32" r="28" fill="#1e3a47"/>
+
+  <!-- 6 Crisp Wheel Slices -->
+  <!-- Slice 1: Vibrant Teal -->
+  <path d="M32 32 L32 5 A27 27 0 0 1 55.38 18.5 Z" fill="#1B6B6B"/>
+  <!-- Slice 2: Coral Red -->
+  <path d="M32 32 L55.38 18.5 A27 27 0 0 1 55.38 45.5 Z" fill="#e85d4c"/>
+  <!-- Slice 3: Gold Warm Yellow -->
+  <path d="M32 32 L55.38 45.5 A27 27 0 0 1 32 59 Z" fill="#ffb703"/>
+  <!-- Slice 4: Emerald Green -->
+  <path d="M32 32 L32 59 A27 27 0 0 1 8.62 45.5 Z" fill="#06d6a0"/>
+  <!-- Slice 5: Electric Violet -->
+  <path d="M32 32 L8.62 45.5 A27 27 0 0 1 8.62 18.5 Z" fill="#9b5de5"/>
+  <!-- Slice 6: Bright Sky Blue -->
+  <path d="M32 32 L8.62 18.5 A27 27 0 0 1 32 5 Z" fill="#118ab2"/>
+
+  <!-- Inner Center Hub with White Ring -->
+  <circle cx="32" cy="32" r="9" fill="#ffffff" filter="url(#shadow)"/>
+  <circle cx="32" cy="32" r="6" fill="#10232b"/>
+  <circle cx="32" cy="32" r="2.5" fill="#ffb703"/>
+
+  <!-- Top Pointer Arrow (Classic Wheel Needle) -->
+  <polygon points="32,1 36,9 28,9" fill="#e85d4c" stroke="#ffffff" stroke-width="1.2"/>
 </svg>
