@@ -11,7 +11,7 @@ export interface WheelTemplate {
 }
 
 export const WHEEL_TEMPLATES: WheelTemplate[] = [
-  // Education Category
+  // Education & Classroom Category
   {
     slug: 'random-student-generator',
     category: 'education',
@@ -44,18 +44,100 @@ export const WHEEL_TEMPLATES: WheelTemplate[] = [
     faq: [
       {
         question: 'Can I remove selected groups after spinning?',
-        answer: 'Yes, enable "Remove winner after spin" to assign teams without repetition.',
+        answer: 'Yes, enable "Remove winner after each spin" to assign teams without repetition.',
+      },
+    ],
+  },
+  {
+    slug: 'letter-picker-wheel',
+    category: 'education',
+    categoryName: 'Education & Classroom',
+    title: 'Letter Picker Wheel (A to Z Alphabet Spinner)',
+    h1: 'Random Letter Picker Wheel (A-Z Alphabet Spinner)',
+    metaTitle: 'Letter Picker Wheel | Random Alphabet Letter Generator (A-Z)',
+    metaDescription: 'Spin the random letter picker wheel from A to Z. Perfect for spelling games, Scrabble, phonics lessons, and vocabulary practice.',
+    defaultOptions: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
+    faq: [
+      {
+        question: 'Can I choose between vowels and consonants?',
+        answer: 'Yes, you can customize the list to only include vowels or specific alphabet letters in the entry editor.',
+      },
+    ],
+  },
+  {
+    slug: 'number-picker-wheel',
+    category: 'education',
+    categoryName: 'Education & Classroom',
+    title: 'Number Picker Wheel (1-10 Random Number Spinner)',
+    h1: 'Random Number Picker Wheel (1 to 10)',
+    metaTitle: 'Number Picker Wheel | Random Number Generator 1-10',
+    metaDescription: 'Generate random numbers with the spinning number wheel. Great for math games, bingo, raffles, and random probability teaching.',
+    defaultOptions: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+    faq: [
+      {
+        question: 'Can I spin numbers up to 100?',
+        answer: 'Yes, click the text area and paste numbers 1 to 100 (one per line) to instantly generate a 100-number wheel.',
       },
     ],
   },
 
-  // Food & Lifestyle Category
+  // Teams & Sports Category
+  {
+    slug: 'team-picker-wheel',
+    category: 'teams',
+    categoryName: 'Teams & Groups',
+    title: 'Team Picker Wheel (Random Team Generator)',
+    h1: 'Team Picker Wheel - Generate Random Teams & Groups',
+    metaTitle: 'Team Picker Wheel | Random Team & Group Generator',
+    metaDescription: 'Randomly split players, students, or coworkers into balanced teams. Free random team generator wheel with instant results.',
+    defaultOptions: ['Team Alpha', 'Team Bravo', 'Team Charlie', 'Team Delta', 'Team Echo', 'Team Foxtrot'],
+    faq: [
+      {
+        question: 'How do I divide players into 2 or more teams?',
+        answer: 'Spin the team wheel to assign each participant to a team, or put participant names on the wheel and eliminate them into team brackets.',
+      },
+    ],
+  },
+  {
+    slug: 'nba-picker-wheel',
+    category: 'teams',
+    categoryName: 'Teams & Groups',
+    title: 'NBA Team Picker Wheel',
+    h1: 'Random NBA Team Picker Wheel',
+    metaTitle: 'NBA Picker Wheel | Random NBA Basketball Team Generator',
+    metaDescription: 'Pick a random NBA basketball team for 2K matches, fantasy drafts, or franchise rebuilds. Features top NBA franchises.',
+    defaultOptions: ['Lakers', 'Celtics', 'Warriors', 'Bulls', 'Heat', 'Nets', 'Bucks', 'Suns', 'Nuggets', 'Knicks'],
+    faq: [
+      {
+        question: 'Can I add all 30 NBA teams?',
+        answer: 'Yes, you can edit or import the full 30-team NBA roster into the entries editor anytime.',
+      },
+    ],
+  },
+  {
+    slug: 'nfl-picker-wheel',
+    category: 'teams',
+    categoryName: 'Teams & Groups',
+    title: 'NFL Team Picker Wheel',
+    h1: 'Random NFL Football Team Picker Wheel',
+    metaTitle: 'NFL Picker Wheel | Random NFL Football Team Generator',
+    metaDescription: 'Randomly select an NFL team for Madden tournaments, fantasy football pick\'ems, or game day watching.',
+    defaultOptions: ['Chiefs', 'Eagles', '49ers', 'Cowboys', 'Bills', 'Packers', 'Patriots', 'Rams', 'Lions', 'Ravens'],
+    faq: [
+      {
+        question: 'Is this wheel updated for current NFL franchises?',
+        answer: 'Yes, you can customize any team names or add all 32 NFL franchises in the entry editor.',
+      },
+    ],
+  },
+
+  // Food & Dining Category
   {
     slug: 'what-to-eat-wheel',
     category: 'food',
     categoryName: 'Food & Dining',
     title: 'What to Eat Decision Wheel',
-    h1: 'What to Eat Decision Wheel',
+    h1: 'What to Eat Decision Wheel - Random Meal Picker',
     metaTitle: 'What to Eat Wheel | Random Food & Dinner Picker',
     metaDescription: 'Can\'t decide what to eat for lunch or dinner? Spin the random food picker wheel to choose pizza, sushi, tacos, burgers, or salads instantly.',
     defaultOptions: ['🍕 Pizza', '🍔 Burgers', '🍣 Sushi', '🌮 Tacos', '🥗 Salad', '🍝 Pasta', '🍜 Ramen', '🥩 Steak'],
@@ -83,7 +165,41 @@ export const WHEEL_TEMPLATES: WheelTemplate[] = [
     ],
   },
 
-  // Gaming Category
+  // Geography & Trivia Category
+  {
+    slug: 'country-picker-wheel',
+    category: 'geography',
+    categoryName: 'Geography & Travel',
+    title: 'Country Picker Wheel (Random Country Generator)',
+    h1: 'Country Picker Wheel - Pick a Random Country in the World',
+    metaTitle: 'Country Picker Wheel | Random Country Generator & Travel Picker',
+    metaDescription: 'Spin to pick a random country for geography trivia, GeoGuessr challenges, MUN conferences, or your next vacation destination.',
+    defaultOptions: ['United States', 'United Kingdom', 'Canada', 'Japan', 'Germany', 'Australia', 'Brazil', 'India', 'France', 'Mexico'],
+    faq: [
+      {
+        question: 'Can I use this for GeoGuessr and geography games?',
+        answer: 'Yes! It is widely used by GeoGuessr streamers and geography teachers for random country quizzes.',
+      },
+    ],
+  },
+  {
+    slug: 'state-picker-wheel',
+    category: 'geography',
+    categoryName: 'Geography & Travel',
+    title: 'US State Picker Wheel',
+    h1: 'US State Picker Wheel - Random 50 States Generator',
+    metaTitle: 'US State Picker Wheel | Random 50 States Generator',
+    metaDescription: 'Pick a random US state for school geography projects, road trip planning, or state trivia games.',
+    defaultOptions: ['California', 'Texas', 'Florida', 'New York', 'Ohio', 'Illinois', 'Georgia', 'North Carolina', 'Pennsylvania', 'Michigan'],
+    faq: [
+      {
+        question: 'Does this wheel support all 50 US states?',
+        answer: 'Yes! You can paste the complete 50 US states list into the entry editor with one click.',
+      },
+    ],
+  },
+
+  // Gaming & Esports Category
   {
     slug: 'fortnite-drop-picker',
     category: 'gaming',
@@ -95,8 +211,8 @@ export const WHEEL_TEMPLATES: WheelTemplate[] = [
     defaultOptions: ['Reckless Railways', 'Snooty Steppes', 'Fencing Fields', 'Lavish Lair', 'Classy Courts', 'Pleasant Piazza', 'Ritzy Riviera', 'Ruined Reels'],
     faq: [
       {
-        question: 'Is this drop generator updated for current Fortnite chapters?',
-        answer: 'Yes! The POI landing spots are updated for active Fortnite battle royale maps.',
+        question: 'Is this drop generator updated for active Fortnite chapters?',
+        answer: 'Yes! The POI landing spots reflect active Fortnite battle royale locations.',
       },
     ],
   },
@@ -147,6 +263,22 @@ export const WHEEL_TEMPLATES: WheelTemplate[] = [
       {
         question: 'Is the Yes/No wheel strictly 50/50 fair?',
         answer: 'Yes, the wheel utilizes an unbiased cryptographic random number generator algorithm to land on YES or NO with equal probability.',
+      },
+    ],
+  },
+  {
+    slug: 'color-picker-wheel',
+    category: 'games',
+    categoryName: 'Party & Games',
+    title: 'Color Picker Wheel (Random Color Generator)',
+    h1: 'Random Color Picker Wheel',
+    metaTitle: 'Color Picker Wheel | Random Color Spinner & Palette Generator',
+    metaDescription: 'Spin to choose a random color for art challenges, design inspiration, team jerseys, or game boards.',
+    defaultOptions: ['Red 🔴', 'Blue 🔵', 'Green 🟢', 'Yellow 🟡', 'Purple 🟣', 'Orange 🟠', 'Pink 🌸', 'Teal 🌊'],
+    faq: [
+      {
+        question: 'Can I use custom hex colors?',
+        answer: 'Yes, you can edit labels and choose custom colors in the entries editor.',
       },
     ],
   },

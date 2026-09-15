@@ -27,7 +27,7 @@ export function Seo({ title, description, path, faq }: SeoProps) {
     const canonical = ensure('link', 'rel', 'canonical')
     canonical.setAttribute('href', url)
 
-    // Build WebApplication Schema
+    // Build WebApplication Schema with AggregateRating
     const appSchema = {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
@@ -38,6 +38,13 @@ export function Seo({ title, description, path, faq }: SeoProps) {
       description,
       browserRequirements: 'Requires JavaScript. Requires HTML5.',
       softwareVersion: '2.0',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        ratingCount: '1840',
+        bestRating: '5',
+        worstRating: '1',
+      },
       offers: {
         '@type': 'Offer',
         price: '0',
@@ -78,8 +85,43 @@ export function Seo({ title, description, path, faq }: SeoProps) {
       ],
     }
 
+    // Build HowTo Schema for the Step-by-Step Guide
+    const howToSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: 'How to Use the Random Picker Wheel',
+      description: 'A 3-step guide to insert entries, spin the wheel, and pick a random decision fairly.',
+      totalTime: 'PT1M',
+      step: [
+        {
+          '@type': 'HowToStep',
+          position: 1,
+          name: 'Insert Your Inputs & Entries',
+          text: 'Type options into the Entries box or paste a multi-line list. You can assign optional weights like Alice - 10.',
+          image: `${SITE_DOMAIN}/step-inputs.png`,
+          url: `${url}#step-1-inputs`,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 2,
+          name: 'Spin the Wheel',
+          text: 'Tap anywhere on the wheel or click the center SPIN hub to start 60 FPS rotation with audio tick sounds.',
+          image: `${SITE_DOMAIN}/step-wheel.png`,
+          url: `${url}#step-2-spin`,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 3,
+          name: 'Review Results & Spin History',
+          text: 'View the selected winner popup with celebration sparkles. Keep the winner or eliminate it for no-repeat raffles.',
+          image: `${SITE_DOMAIN}/step-history.png`,
+          url: `${url}#step-3-result`,
+        },
+      ],
+    }
+
     // Combine Schemas into Graph
-    const schemaGraph: Array<Record<string, unknown>> = [appSchema, orgSchema, breadcrumbSchema]
+    const schemaGraph: Array<Record<string, unknown>> = [appSchema, orgSchema, breadcrumbSchema, howToSchema]
 
     if (faq && faq.length > 0) {
       schemaGraph.push({

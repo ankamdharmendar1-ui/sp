@@ -5,7 +5,9 @@ import { WHEEL_TEMPLATES } from '../../data/templates'
 export function RandomWheelPage() {
   const categories = [
     { title: 'Education & Classroom', templates: WHEEL_TEMPLATES.filter(t => t.category === 'education') },
+    { title: 'Teams & Sports', templates: WHEEL_TEMPLATES.filter(t => t.category === 'teams') },
     { title: 'Food & Dining', templates: WHEEL_TEMPLATES.filter(t => t.category === 'food') },
+    { title: 'Geography & Travel', templates: WHEEL_TEMPLATES.filter(t => t.category === 'geography') },
     { title: 'Gaming & Esports', templates: WHEEL_TEMPLATES.filter(t => t.category === 'gaming') },
     { title: 'Party & Games', templates: WHEEL_TEMPLATES.filter(t => t.category === 'games') },
   ]
