@@ -59,6 +59,13 @@ export function Seo({ title, description, path, faq }: SeoProps) {
       name: SITE_NAME,
       url: SITE_DOMAIN,
       logo: `${SITE_DOMAIN}/favicon.svg`,
+      email: 'contact@realpickerwheel.com',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        email: 'contact@realpickerwheel.com',
+        url: `${SITE_DOMAIN}/contact`,
+      },
       sameAs: [
         'https://www.instagram.com/realpickerwheel_com',
         'https://www.facebook.com/share/1GeqhThN2T/',
