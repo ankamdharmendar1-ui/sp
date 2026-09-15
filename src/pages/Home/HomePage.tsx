@@ -4,7 +4,7 @@ import { WheelWorkbench } from './WheelWorkbench'
 export const HOME_FAQS = [
   {
     question: 'How does the random picker wheel work?',
-    answer: 'The random picker wheel uses a cryptographically random number generator algorithm to fairly select a slice on the wheel when spun.',
+    answer: 'The random picker wheel uses a cryptographically secure pseudo-random number generator (PRNG) algorithm to calculate angles and determine winning slices with 100% mathematical fairness.',
   },
   {
     question: 'Is Real Picker Wheel free to use?',
@@ -17,6 +17,14 @@ export const HOME_FAQS = [
   {
     question: 'Are my entry lists saved privately?',
     answer: 'All wheel data and lists are saved strictly in your local browser storage. No data is sent to external servers.',
+  },
+  {
+    question: 'Is Real Picker Wheel biased or rigged?',
+    answer: 'No. The algorithm guarantees equal probability for every slice unless custom weights are assigned by the user.',
+  },
+  {
+    question: 'Can I embed the wheel on my blog or PowerPoint?',
+    answer: 'Yes! Click the Embed button under the wheel to generate a responsive HTML iframe code snippet ready to paste anywhere.',
   },
 ]
 
