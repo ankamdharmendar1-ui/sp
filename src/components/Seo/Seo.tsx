@@ -59,6 +59,10 @@ export function Seo({ title, description, path, faq }: SeoProps) {
       name: SITE_NAME,
       url: SITE_DOMAIN,
       logo: `${SITE_DOMAIN}/favicon.svg`,
+      sameAs: [
+        'https://www.instagram.com/realpickerwheel_com',
+        'https://www.facebook.com/share/1GeqhThN2T/',
+      ],
     }
 
     // Build Breadcrumb Schema
