@@ -62,6 +62,7 @@ export function Seo({ title, description, path, faq }: SeoProps) {
       sameAs: [
         'https://www.instagram.com/realpickerwheel_com',
         'https://www.facebook.com/share/1GeqhThN2T/',
+        'https://www.youtube.com/@realpickerwheel',
       ],
     }
 
