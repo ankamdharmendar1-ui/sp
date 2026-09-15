@@ -172,6 +172,24 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
             3. Key Features &amp; Settings
           </h2>
+          <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
+            Customize every visual and auditory aspect of your wheel in the <strong>Wheel customization</strong> panel. Adjust spin timing, colors, font scaling, and celebratory behavior to fit your exact activity:
+          </p>
+
+          <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs max-w-md mx-auto">
+            <img
+              src="/step-customization.png"
+              alt="Wheel customization panel showing background options, text size, spin duration slider, and sound toggles"
+              className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+              loading="lazy"
+              width="450"
+              height="450"
+            />
+            <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+              Wheel customization: change backgrounds, text size, spin duration, audio, confetti, and elimination mode.
+            </figcaption>
+          </figure>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-[#d7cfc2] bg-white p-5 shadow-sm space-y-2">
               <h3 className="text-base font-bold text-[#10232b] flex items-center gap-2">
@@ -268,6 +286,24 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
             7. Popular Use Cases &amp; Category Presets
           </h2>
+          <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
+            Easily navigate between our specialized decision wheels directly from the top navigation bar. Click the <strong>Tools</strong> dropdown to access pre-configured wheels for sports, classroom games, and binary choices:
+          </p>
+
+          <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs max-w-lg mx-auto">
+            <img
+              src="/step-tools-nav.png"
+              alt="Real Picker Wheel header navigation showing Wheel, How to use, About, Contact, and Tools menu"
+              className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+              loading="lazy"
+              width="500"
+              height="80"
+            />
+            <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+              Top navigation bar: quickly explore specialized wheels under the Tools menu.
+            </figcaption>
+          </figure>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link to="/education/random-student-generator" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
               <span className="text-2xl" aria-hidden="true">🎓</span>
