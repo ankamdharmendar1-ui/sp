@@ -53,117 +53,115 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
               2. How to Use the Picker Wheel?
             </h2>
             <p className="text-sm sm:text-base text-[#5c6a72]">
-              Follow this simple 3-step walkthrough to customize, spin, and decide with your wheel:
+              Follow this simple walkthrough to set up your entries, spin the wheel, and review your decision:
             </p>
           </div>
 
           {/* Step 1 */}
-          <div id="step-1-inputs" className="scroll-mt-24 space-y-4 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
+          <div id="step-1-inputs" className="scroll-mt-24 space-y-5 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
             <div className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#1B6B6B] text-white text-base font-extrabold shadow-sm">1</span>
-              <h3 className="text-xl font-black text-[#10232b]">Step 1: Insert Inputs</h3>
+              <h3 className="text-xl font-black text-[#10232b]">Step 1: Insert Your Inputs &amp; Entries</h3>
             </div>
             <p className="text-sm leading-relaxed text-[#3e4c59]">
-              Locate the <strong>Entries</strong> panel on the page. Enter your choices one by one into the input box or click <strong>Import</strong> to paste a full comma-separated list or Excel/CSV roster.
+              Start by typing your choices into the <strong>Entries</strong> field. You can type names one by one into the input bar and click <strong>Add</strong>, or paste multiple choices directly into the multi-line text area (one entry per line). If you want certain options to appear more frequently, you can assign optional weights (for example: <code>Alice - 10</code>).
             </p>
 
-            {/* Visual Step UI Mockup (Screenshot equivalent) */}
-            <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-5 shadow-inner" aria-label="Step 1 Inputs Mockup">
-              <div className="flex items-center justify-between pb-3 border-b border-[#e4d9c8] text-xs font-bold text-[#5c6a72]">
-                <span>ENTRY LIST EDITOR PREVIEW</span>
-                <span className="rounded-md bg-[#1B6B6B]/10 px-2 py-0.5 text-[#1B6B6B]">Weighted &amp; Colors Active</span>
-              </div>
-              <div className="mt-4 space-y-2.5">
-                <div className="flex gap-2">
-                  <div className="flex-1 rounded-xl border border-[#d7cfc2] bg-white px-3.5 py-2.5 text-xs font-medium text-[#10232b] shadow-xs">
-                    Alice, Bob, Charlie, David...
-                  </div>
-                  <div className="rounded-xl bg-[#1B6B6B] px-4 py-2.5 text-xs font-bold text-white shadow-xs">
-                    + Add
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
-                  <div className="flex items-center gap-2 rounded-xl bg-white border border-[#d7cfc2] p-2 text-xs font-bold text-[#10232b]">
-                    <span className="h-3 w-3 rounded-full bg-[#e85d4c]" /> YES (Weight: 1)
-                  </div>
-                  <div className="flex items-center gap-2 rounded-xl bg-white border border-[#d7cfc2] p-2 text-xs font-bold text-[#10232b]">
-                    <span className="h-3 w-3 rounded-full bg-[#1B6B6B]" /> NO (Weight: 1)
-                  </div>
-                  <div className="flex items-center gap-2 rounded-xl bg-white border border-[#d7cfc2] p-2 text-xs font-bold text-[#10232b]">
-                    <span className="h-3 w-3 rounded-full bg-[#F2CC8F]" /> MAYBE (Weight: 1)
-                  </div>
-                  <div className="flex items-center gap-2 rounded-xl bg-white border border-[#d7cfc2] p-2 text-xs font-bold text-[#10232b]">
-                    <span className="h-3 w-3 rounded-full bg-[#81B29A]" /> RE-SPIN (Weight: 1)
-                  </div>
-                </div>
-              </div>
-              <figcaption className="mt-3 text-center text-xs font-semibold text-[#7a8a92]">
-                Figure 1.1: Add, edit, randomize order, or adjust individual slice weights and colors.
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs">
+                <img
+                  src="/step-inputs.png"
+                  alt="Adding single and multi-line inputs with optional weights in Real Picker Wheel"
+                  className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+                  loading="lazy"
+                  width="500"
+                  height="260"
+                />
+                <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+                  Type single items or paste an entire roster at once.
+                </figcaption>
+              </figure>
+
+              <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs">
+                <img
+                  src="/step-entries.png"
+                  alt="Managing active entries list with color indicators and delete buttons"
+                  className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+                  loading="lazy"
+                  width="500"
+                  height="260"
+                />
+                <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+                  View active entries with colored slice indicators or delete items.
+                </figcaption>
+              </figure>
+            </div>
+
+            <p className="text-xs sm:text-sm text-[#5c6a72] leading-relaxed">
+              Use the toolbar buttons below your list to manage your choices in bulk. You can randomize the order, clear all entries, copy items to your clipboard, or export and import your lists as CSV and TXT files.
+            </p>
+
+            <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs max-w-lg mx-auto">
+              <img
+                src="/step-controls.png"
+                alt="Entry toolbar with Add list, Clear all, Randomize order, and Import/Export options"
+                className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+                loading="lazy"
+                width="500"
+                height="220"
+              />
+              <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+                Quick-action toolbar for list randomization, bulk copy, and CSV imports.
               </figcaption>
             </figure>
           </div>
 
           {/* Step 2 */}
-          <div id="step-2-spin" className="scroll-mt-24 space-y-4 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
+          <div id="step-2-spin" className="scroll-mt-24 space-y-5 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
             <div className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#1B6B6B] text-white text-base font-extrabold shadow-sm">2</span>
               <h3 className="text-xl font-black text-[#10232b]">Step 2: Spin the Wheel</h3>
             </div>
             <p className="text-sm leading-relaxed text-[#3e4c59]">
-              Click anywhere directly on the wheel canvas or trigger it from your controls. The wheel accelerates with realistic momentum physics and emits sensory audio feedback while rotating.
+              Once your choices are entered, simply tap anywhere on the wheel or click the center <strong>SPIN</strong> hub. The wheel accelerates smoothly with dynamic audio click ticks, creating anticipation before slowing down to land on a fair winner.
             </p>
 
-            {/* Visual Step UI Mockup (Screenshot equivalent) */}
-            <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-5 shadow-inner" aria-label="Step 2 Spin Wheel Mockup">
-              <div className="flex items-center justify-between pb-3 border-b border-[#e4d9c8] text-xs font-bold text-[#5c6a72]">
-                <span>WHEEL ROTATION CANVAS PREVIEW</span>
-                <span className="rounded-md bg-emerald-100 px-2 py-0.5 text-emerald-800">60 FPS Hardware-Accelerated</span>
-              </div>
-              <div className="my-6 flex flex-col items-center justify-center gap-3">
-                <div className="relative flex h-36 w-36 items-center justify-center rounded-full border-4 border-[#10232b] bg-radial from-[#F2CC8F] via-[#e85d4c] to-[#1B6B6B] shadow-lg animate-spin" style={{ animationDuration: '4s' }}>
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-[#10232b] shadow-md flex items-center justify-center text-white text-[10px] font-black">
-                    SPIN
-                  </div>
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-0 h-0 border-x-8 border-x-transparent border-t-[14px] border-t-[#e85d4c] filter drop-shadow-sm" />
-                </div>
-                <p className="text-xs font-bold text-[#10232b]">Clicking anywhere on the wheel starts rotation</p>
-              </div>
-              <figcaption className="text-center text-xs font-semibold text-[#7a8a92]">
-                Figure 1.2: Smooth angular deceleration with Web Audio click ticks and needle pointer.
+            <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs max-w-md mx-auto">
+              <img
+                src="/step-wheel.png"
+                alt="Interactive 60 FPS spinning canvas wheel with central SPIN hub and needle pointer"
+                className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+                loading="lazy"
+                width="450"
+                height="480"
+              />
+              <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+                Smooth 60 FPS canvas with pointer needle and quick controls (Reset, Names, Embed).
               </figcaption>
             </figure>
           </div>
 
           {/* Step 3 */}
-          <div id="step-3-result" className="scroll-mt-24 space-y-4 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
+          <div id="step-3-result" className="scroll-mt-24 space-y-5 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
             <div className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#1B6B6B] text-white text-base font-extrabold shadow-sm">3</span>
-              <h3 className="text-xl font-black text-[#10232b]">Step 3: Get Result &amp; Action Modes</h3>
+              <h3 className="text-xl font-black text-[#10232b]">Step 3: Review Results &amp; Spin History</h3>
             </div>
             <p className="text-sm leading-relaxed text-[#3e4c59]">
-              The wheel halts cleanly on the winning slice. A celebration dialog opens with full-screen party sparkles and confetti. From here you can copy the result, share it, or eliminate the item.
+              After the wheel stops, a celebratory winner modal dialog highlights the selected option with vibrant party sparkles. Every spin result is automatically logged in your <strong>Spin history</strong> section so you can keep track of past winners during games, classroom drawings, or multi-round raffles.
             </p>
 
-            {/* Visual Step UI Mockup (Screenshot equivalent) */}
-            <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-5 shadow-inner" aria-label="Step 3 Winner Result Dialog Mockup">
-              <div className="flex items-center justify-between pb-3 border-b border-[#e4d9c8] text-xs font-bold text-[#5c6a72]">
-                <span>WINNER POPUP DIALOG PREVIEW</span>
-                <span className="rounded-md bg-amber-100 px-2 py-0.5 text-amber-900">Celebration Fanfare Active</span>
-              </div>
-              <div className="my-4 mx-auto max-w-sm rounded-2xl border-2 border-[#c5b84c] bg-white p-5 text-center shadow-md">
-                <span className="text-3xl font-black text-[#10232b]">YES</span>
-                <p className="text-xs font-semibold text-[#5c6a72] mt-0.5">Selected Winner</p>
-                <div className="mt-4 flex gap-2">
-                  <div className="flex-1 rounded-xl bg-[#ffb703] py-2 text-xs font-black text-white shadow-xs">
-                    DONE (Keep)
-                  </div>
-                  <div className="rounded-xl border border-[#d7cfc2] px-3 py-2 text-xs font-bold text-[#3e4c59]">
-                    Copy Result
-                  </div>
-                </div>
-              </div>
-              <figcaption className="text-center text-xs font-semibold text-[#7a8a92]">
-                Figure 1.3: Winner modal with instant clipboard copy, celebration sparkles, and action choices.
+            <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs max-w-lg mx-auto">
+              <img
+                src="/step-history.png"
+                alt="Spin history tracker showing sequential list of previous spin winners"
+                className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
+                loading="lazy"
+                width="500"
+                height="150"
+              />
+              <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
+                Automatic spin history tracks previous winners and lets you clear records anytime.
               </figcaption>
             </figure>
           </div>
