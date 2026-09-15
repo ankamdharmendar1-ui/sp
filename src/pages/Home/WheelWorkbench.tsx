@@ -13,6 +13,8 @@ import { useWheel } from '../../hooks/useWheelStore'
 import type { WheelEntry } from '../../types/wheel'
 
 import { EmbedModal } from '../../components/EmbedDialog/EmbedModal'
+import { HomeSeoContent } from '../../components/Seo/HomeSeoContent'
+import { HOME_FAQS } from './HomePage'
 
 const BACKGROUNDS = {
   cream: 'bg-[#f4efe4] text-[#10232b]',
@@ -167,6 +169,10 @@ export function WheelWorkbench({
             <Settings />
           </div>
         </div>
+
+        {/* SEO Text Content Section below wheel */}
+        <HomeSeoContent faqs={HOME_FAQS} />
+      </div>
       </div>
 
       {result && (

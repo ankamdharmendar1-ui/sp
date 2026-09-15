@@ -1,7 +1,7 @@
 import { Seo } from '../../components/Seo/Seo'
 import { WheelWorkbench } from './WheelWorkbench'
 
-const HOME_FAQS = [
+export const HOME_FAQS = [
   {
     question: 'How does the random picker wheel work?',
     answer: 'The random picker wheel uses a cryptographically random number generator algorithm to fairly select a slice on the wheel when spun.',
