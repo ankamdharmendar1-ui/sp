@@ -173,7 +173,6 @@ export function WheelWorkbench({
         {/* SEO Text Content Section below wheel */}
         <HomeSeoContent faqs={HOME_FAQS} />
       </div>
-      </div>
 
       {result && (
         <ResultDisplay

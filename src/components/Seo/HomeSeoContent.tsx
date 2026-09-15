@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
-
-interface HomeSeoContentProps {
+export interface HomeSeoContentProps {
   faqs: Array<{ question: string; answer: string }>
 }
 
