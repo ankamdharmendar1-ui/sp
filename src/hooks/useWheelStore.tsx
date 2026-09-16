@@ -50,6 +50,8 @@ interface WheelContextValue {
   clearHistory: () => void
   resetWheel: () => void
   finishSpin: (winner: WheelEntry) => void
+  loadTemplateWheel: (title: string, options: string[]) => void
+  activateDefaultWheel: () => void
 }
 
 const WheelContext = createContext<WheelContextValue | null>(null)
@@ -302,6 +304,40 @@ export function WheelProvider({ children }: { children: ReactNode }) {
     setResult(null)
   }, [mutate, spinning])
 
+  const activateDefaultWheel = useCallback(() => {
+    if (spinning) return
+    setWheels((prev) => {
+      const yesNoWheel = prev.find(
+        (w) => w.name.toLowerCase() === 'yes or no' || w.name.toLowerCase() === 'yes no picker wheel'
+      )
+      if (yesNoWheel) {
+        setActiveId(yesNoWheel.id)
+        return prev
+      }
+      const defaultWheel = makeWheel('Yes or No', ['YES', 'NO', 'YES', 'NO', 'YES', 'NO', 'YES', 'NO'])
+      setActiveId(defaultWheel.id)
+      return [defaultWheel, ...prev]
+    })
+    setRotation(0)
+    setResult(null)
+  }, [spinning])
+
+  const loadTemplateWheel = useCallback((title: string, options: string[]) => {
+    if (spinning) return
+    setWheels((prev) => {
+      const existing = prev.find((w) => w.name.toLowerCase() === title.toLowerCase())
+      if (existing) {
+        setActiveId(existing.id)
+        return prev
+      }
+      const newW = makeWheel(title, options)
+      setActiveId(newW.id)
+      return [...prev, newW]
+    })
+    setRotation(0)
+    setResult(null)
+  }, [spinning])
+
   const clearNotice = useCallback(() => setNotice(null), [])
   const clearResult = useCallback(() => setResult(null), [])
 
@@ -337,6 +373,8 @@ export function WheelProvider({ children }: { children: ReactNode }) {
         clearHistory,
         resetWheel,
         finishSpin,
+        loadTemplateWheel,
+        activateDefaultWheel,
       }
     : null
 

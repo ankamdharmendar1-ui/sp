@@ -10,6 +10,7 @@ export function RandomWheelPage() {
     { title: 'Geography & Travel', templates: WHEEL_TEMPLATES.filter(t => t.category === 'geography') },
     { title: 'Gaming & Esports', templates: WHEEL_TEMPLATES.filter(t => t.category === 'gaming') },
     { title: 'Party & Games', templates: WHEEL_TEMPLATES.filter(t => t.category === 'games') },
+    { title: 'Decision & Utility Tools', templates: WHEEL_TEMPLATES.filter(t => t.category === 'tools') },
   ]
 
   return (

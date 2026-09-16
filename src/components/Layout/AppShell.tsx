@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { NavLink, Outlet, useNavigate } from 'react-router-dom'
-import { SITE_NAME, makeWheel } from '../../data/defaults'
-import { useWheel } from '../../hooks/useWheelStore'
+import { NavLink, Outlet } from 'react-router-dom'
+import { SITE_NAME } from '../../data/defaults'
 
 const links = [
   { to: '/', label: 'Wheel' },
@@ -11,29 +10,27 @@ const links = [
 ]
 
 export function AppShell() {
-  const navigate = useNavigate()
-  const { wheels, switchWheel } = useWheel()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [toolsOpen, setToolsOpen] = useState(false)
 
   const toolsList = [
-    { label: 'Picker Wheel', preset: 'Classroom names', icon: '🎯' },
-    { label: 'State Picker Wheel', preset: 'States', icon: '📍', labels: ['California', 'Texas', 'Florida', 'New York', 'Ohio', 'Illinois', 'Georgia', 'North Carolina'] },
-    { label: 'NBA Picker Wheel', preset: 'NBA Teams', icon: '🏀', labels: ['Lakers', 'Celtics', 'Warriors', 'Bulls', 'Heat', 'Nets', 'Bucks', 'Suns'] },
-    { label: 'Team Picker Wheel', preset: 'Team Generator', icon: '👥', labels: ['Team A', 'Team B', 'Team C', 'Team D'] },
-    { label: 'Color Picker Wheel', preset: 'Color Picker', icon: '🎨', labels: ['Red', 'Blue', 'Green', 'Yellow', 'Purple', 'Orange', 'Pink', 'Teal'] },
-    { label: 'NFL Picker Wheel', preset: 'NFL Teams', icon: '🏈', labels: ['Chiefs', 'Eagles', '49ers', 'Cowboys', 'Bills', 'Packers', 'Patriots', 'Rams'] },
-    { label: 'Yes No Picker Wheel', preset: 'Yes or No', icon: '💬', labels: ['YES', 'NO', 'YES', 'NO', 'YES', 'NO', 'YES', 'NO'] },
-    { label: 'Image Picker Wheel', to: '/wheel-spinner', icon: '🖼️' },
-    { label: 'Flag Quiz Picker Wheel', preset: 'Countries', icon: '🚩', labels: ['USA 🇺🇸', 'UK 🇬🇧', 'Canada 🇨🇦', 'Japan 🇯🇵', 'Germany 🇩🇪', 'India 🇮🇳', 'France 🇫🇷', 'Brazil 🇧🇷'] },
-    { label: 'Number Picker Wheel', preset: 'Numbers 1-10', icon: '🔢', labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] },
-    { label: 'Date Picker Wheel', preset: 'Days of Week', icon: '📅', labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] },
+    { label: 'Picker Wheel', to: '/', icon: '🎯' },
+    { label: 'State Picker Wheel', to: '/geography/state-picker-wheel', icon: '📍' },
+    { label: 'NBA Picker Wheel', to: '/teams/nba-picker-wheel', icon: '🏀' },
+    { label: 'Team Picker Wheel', to: '/teams/team-picker-wheel', icon: '👥' },
+    { label: 'Color Picker Wheel', to: '/games/color-picker-wheel', icon: '🎨' },
+    { label: 'NFL Picker Wheel', to: '/teams/nfl-picker-wheel', icon: '🏈' },
+    { label: 'Yes No Picker Wheel', to: '/games/yes-no-picker-wheel', icon: '💬' },
+    { label: 'Image Picker Wheel', to: '/games/image-picker-wheel', icon: '🖼️' },
+    { label: 'Flag Quiz Picker Wheel', to: '/geography/flag-quiz-picker-wheel', icon: '🚩' },
+    { label: 'Number Picker Wheel', to: '/education/number-picker-wheel', icon: '🔢' },
+    { label: 'Date Picker Wheel', to: '/tools/date-picker-wheel', icon: '📅' },
     { label: 'Lunch Randomizer', to: '/food/what-should-i-eat-for-lunch', icon: '🥪' },
-    { label: 'Truth or Dare Picker', preset: 'Truth or Dare', icon: '🎲', labels: ['Truth', 'Dare', 'Truth', 'Dare', 'Double Dare', 'Pass'] },
-    { label: 'Letter Picker Wheel', preset: 'Alphabet A-H', icon: '🔤', labels: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] },
-    { label: 'Instagram Comment Picker', to: '/random-name-picker', icon: '📷' },
-    { label: 'Country Picker Wheel', preset: 'Countries', icon: '🌍', labels: ['United States', 'Canada', 'Mexico', 'United Kingdom', 'Germany', 'Australia', 'Japan', 'Brazil'] },
-    { label: 'MLB Picker Wheel', preset: 'MLB Teams', icon: '⚾', labels: ['Yankees', 'Dodgers', 'Red Sox', 'Cubs', 'Braves', 'Astros', 'Mets', 'Phillies'] },
+    { label: 'Truth or Dare Picker', to: '/games/truth-or-dare-wheel', icon: '🎲' },
+    { label: 'Letter Picker Wheel', to: '/education/letter-picker-wheel', icon: '🔤' },
+    { label: 'Instagram Comment Picker', to: '/tools/instagram-comment-picker', icon: '📷' },
+    { label: 'Country Picker Wheel', to: '/geography/country-picker-wheel', icon: '🌍' },
+    { label: 'MLB Picker Wheel', to: '/teams/mlb-picker-wheel', icon: '⚾' },
   ]
 
   return (
@@ -85,43 +82,25 @@ export function AppShell() {
                 <div className="absolute right-0 top-full z-50 mt-2 w-[680px] rounded-2xl border border-[#d7cfc2] bg-white p-5 shadow-2xl">
                   <div className="grid grid-cols-3 gap-x-4 gap-y-3.5">
                     {toolsList.map((tool, idx) => (
-                      <button
+                      <NavLink
                         key={idx}
-                        type="button"
-                        onClick={() => {
-                          setToolsOpen(false)
-                          if (tool.labels && tool.labels.length) {
-                            const existing = wheels.find((w) => w.name === tool.label)
-                            if (existing) {
-                              switchWheel(existing.id)
-                            } else {
-                              const newW = makeWheel(tool.label, tool.labels)
-                              wheels.push(newW)
-                              switchWheel(newW.id)
-                            }
-                            navigate('/')
-                          } else if (tool.to) {
-                            navigate(tool.to)
-                          }
-                        }}
+                        to={tool.to}
+                        onClick={() => setToolsOpen(false)}
                         className="flex items-center gap-3 rounded-xl p-2.5 text-left text-xs font-bold text-[#10232b] hover:bg-[#f4efe4] transition-colors"
                       >
                         <span className="text-xl shrink-0">{tool.icon}</span>
                         <span className="truncate tracking-normal font-semibold">{tool.label}</span>
-                      </button>
+                      </NavLink>
                     ))}
                   </div>
                   <div className="mt-4 border-t border-[#e4d9c8] pt-3 text-center">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setToolsOpen(false)
-                        navigate('/random-wheel')
-                      }}
+                    <NavLink
+                      to="/random-wheel"
+                      onClick={() => setToolsOpen(false)}
                       className="inline-block w-full rounded-xl border border-[#d7cfc2] py-2 text-xs font-bold text-[#10232b] hover:bg-[#f4efe4]"
                     >
                       All Tools
-                    </button>
+                    </NavLink>
                   </div>
                 </div>
               )}
@@ -159,6 +138,15 @@ export function AppShell() {
                   {link.label}
                 </NavLink>
               ))}
+              <NavLink
+                to="/random-wheel"
+                onClick={() => setMobileMenuOpen(false)}
+                className={({ isActive }) =>
+                  `rounded-lg px-3 py-2 text-sm ${isActive ? 'bg-[#1B6B6B] text-white' : 'text-[#3e4c59] hover:bg-[#e4d9c8]/40'}`
+                }
+              >
+                All Tools
+              </NavLink>
             </div>
           </nav>
         )}
@@ -184,9 +172,10 @@ export function AppShell() {
               <ul className="space-y-2 text-xs font-semibold text-[#3e4c59]">
                 <li><NavLink to="/games/yes-no-picker-wheel" className="hover:text-[#1B6B6B] transition-colors">Yes or No Wheel</NavLink></li>
                 <li><NavLink to="/education/random-student-generator" className="hover:text-[#1B6B6B] transition-colors">Student Name Picker</NavLink></li>
-                <li><NavLink to="/food/what-to-eat-wheel" className="hover:text-[#1B6B6B] transition-colors">What to Eat Wheel</NavLink></li>
+                <li><NavLink to="/food/what-should-i-eat-for-lunch" className="hover:text-[#1B6B6B] transition-colors">Lunch Randomizer</NavLink></li>
                 <li><NavLink to="/gaming/fortnite-drop-picker" className="hover:text-[#1B6B6B] transition-colors">Fortnite Drop Picker</NavLink></li>
                 <li><NavLink to="/games/truth-or-dare-wheel" className="hover:text-[#1B6B6B] transition-colors">Truth or Dare Wheel</NavLink></li>
+                <li><NavLink to="/random-wheel" className="hover:text-[#1B6B6B] transition-colors text-[#1B6B6B] font-bold">View All 22+ Tools →</NavLink></li>
               </ul>
             </div>
 

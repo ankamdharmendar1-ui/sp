@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import { EntryEditor } from '../../components/EntryEditor/EntryEditor'
 import { EntryList } from '../../components/EntryList/EntryList'
 import { History } from '../../components/History/History'
@@ -26,9 +26,13 @@ const BACKGROUNDS = {
 export function WheelWorkbench({
   heading,
   subheading,
+  showHomeSeo = false,
+  toolContent,
 }: {
   heading: string
   subheading: string
+  showHomeSeo?: boolean
+  toolContent?: ReactNode
 }) {
   const {
     active,
@@ -171,7 +175,8 @@ export function WheelWorkbench({
         </div>
 
         {/* SEO Text Content Section below wheel */}
-        <HomeSeoContent faqs={HOME_FAQS} />
+        {showHomeSeo && <HomeSeoContent faqs={HOME_FAQS} />}
+        {toolContent}
       </div>
 
       {result && (

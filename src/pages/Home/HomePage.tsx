@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import { Seo } from '../../components/Seo/Seo'
+import { useWheel } from '../../hooks/useWheelStore'
 import { WheelWorkbench } from './WheelWorkbench'
 
 export const HOME_FAQS = [
@@ -29,6 +31,12 @@ export const HOME_FAQS = [
 ]
 
 export function HomePage() {
+  const { activateDefaultWheel } = useWheel()
+
+  useEffect(() => {
+    activateDefaultWheel()
+  }, [activateDefaultWheel])
+
   return (
     <>
       <Seo
@@ -39,7 +47,8 @@ export function HomePage() {
       />
       <WheelWorkbench
         heading="Spin a random picker wheel"
-        subheading="Add names, prizes, or choices, then spin. Real Picker Wheel picks one option at random with a smooth, readable wheel — on desktop or phone."
+        subheading="Make quick Yes or No decisions or add your own custom choices, then spin. Real Picker Wheel picks one option at random with a smooth, readable wheel — on desktop or phone."
+        showHomeSeo={true}
       />
     </>
   )

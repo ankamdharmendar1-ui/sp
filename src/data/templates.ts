@@ -313,4 +313,104 @@ export const WHEEL_TEMPLATES: WheelTemplate[] = [
       },
     ],
   },
+  {
+    slug: 'flag-quiz-picker-wheel',
+    category: 'geography',
+    categoryName: 'Geography & Travel',
+    title: 'Flag Quiz Picker Wheel',
+    h1: 'Flag Quiz Picker Wheel - Random Country Flags Generator',
+    metaTitle: 'Flag Quiz Picker Wheel | Random Country Flag Generator',
+    metaDescription: 'Spin the Flag Quiz Picker Wheel to test your flag knowledge or run classroom geography quizzes. Features world country flags.',
+    defaultOptions: ['USA 🇺🇸', 'UK 🇬🇧', 'Canada 🇨🇦', 'Japan 🇯🇵', 'Germany 🇩🇪', 'India 🇮🇳', 'France 🇫🇷', 'Brazil 🇧🇷', 'Spain 🇪🇸', 'Italy 🇮🇹', 'South Korea 🇰🇷', 'Mexico 🇲🇽'],
+    faq: [
+      {
+        question: 'How do you play flag quiz games with this wheel?',
+        answer: 'Spin the wheel to land on a random flag emoji, and players must name the capital, continent, or national anthem of that country.',
+      },
+      {
+        question: 'Can I add more countries and custom flags?',
+        answer: 'Yes! You can paste any flag emoji or country name directly into the entry editor.',
+      },
+    ],
+  },
+  {
+    slug: 'mlb-picker-wheel',
+    category: 'teams',
+    categoryName: 'Teams & Groups',
+    title: 'MLB Team Picker Wheel',
+    h1: 'MLB Team Picker Wheel - Random Baseball Team Generator',
+    metaTitle: 'MLB Picker Wheel | Random Major League Baseball Team Spinner',
+    metaDescription: 'Randomly pick an MLB baseball team for MLB The Show franchise modes, fantasy baseball drafts, or game day picks. Features top MLB franchises.',
+    defaultOptions: ['New York Yankees', 'Los Angeles Dodgers', 'Boston Red Sox', 'Chicago Cubs', 'Atlanta Braves', 'Houston Astros', 'New York Mets', 'Philadelphia Phillies', 'San Diego Padres', 'Texas Rangers'],
+    faq: [
+      {
+        question: 'Can I add all 30 MLB franchises?',
+        answer: 'Yes, you can edit or import the complete 30 Major League Baseball teams into the entries editor at any time.',
+      },
+      {
+        question: 'Is the MLB wheel random and fair?',
+        answer: 'Yes, each team on the wheel has an exactly equal mathematical probability of winning on every spin.',
+      },
+    ],
+  },
+  {
+    slug: 'image-picker-wheel',
+    category: 'games',
+    categoryName: 'Party & Games',
+    title: 'Image Picker Wheel',
+    h1: 'Image Picker Wheel - Visual Random Choice Spinner',
+    metaTitle: 'Image Picker Wheel | Visual Random Choice Generator',
+    metaDescription: 'Spin the visual image and emoji picker wheel. Perfect for art challenges, drawing prompts, pictionary games, and visual decision making.',
+    defaultOptions: ['🖼️ Mona Lisa', '🎨 Starry Night', '🌊 Great Wave', '🏛️ The Scream', '🌻 Sunflowers', '💃 Girl with Pearl', '🌌 Milky Way', '🪐 Saturn Ring'],
+    faq: [
+      {
+        question: 'Can I use emojis or visual icons on the wheel?',
+        answer: 'Yes! Slices fully support all unicode emojis, icons, and visual characters for interactive visual games.',
+      },
+      {
+        question: 'How do artists use the image picker wheel?',
+        answer: 'Artists and students spin the wheel for daily drawing prompts, color study challenges, or subject matter inspiration.',
+      },
+    ],
+  },
+  {
+    slug: 'date-picker-wheel',
+    category: 'tools',
+    categoryName: 'Utility & Daily Tools',
+    title: 'Date Picker Wheel',
+    h1: 'Date Picker Wheel - Random Day of the Week Spinner',
+    metaTitle: 'Date Picker Wheel | Random Day of Week & Date Generator',
+    metaDescription: 'Spin the date picker wheel to choose a random day of the week, meeting schedule, chore day, or date night plan instantly.',
+    defaultOptions: ['Monday 🗓️', 'Tuesday 🗓️', 'Wednesday 🗓️', 'Thursday 🗓️', 'Friday 🎉', 'Saturday 🌟', 'Sunday ☀️'],
+    faq: [
+      {
+        question: 'What is the date picker wheel used for?',
+        answer: 'It helps teams and families pick meeting days, assign weekly chores, schedule workouts, or plan spontaneous weekend date nights.',
+      },
+      {
+        question: 'Can I customize the dates to specific calendar days or months?',
+        answer: 'Yes! You can enter specific calendar dates (e.g. October 15, October 22) or months into the entries list.',
+      },
+    ],
+  },
+  {
+    slug: 'instagram-comment-picker',
+    category: 'tools',
+    categoryName: 'Utility & Daily Tools',
+    title: 'Instagram Comment Picker Wheel',
+    h1: 'Instagram Comment Picker Wheel - Random Giveaway Winner Generator',
+    metaTitle: 'Instagram Comment Picker Wheel | Random Giveaway Spinner',
+    metaDescription: 'Pick a 100% fair winner for your Instagram giveaway, contest, or raffle. Paste comments or handles and spin the wheel live on stream.',
+    defaultOptions: ['@sarah_travels', '@alex_runner', '@foodie_mike', '@jessica_design', '@david_photo', '@emily_books', '@chris_tech', '@hannah_fit'],
+    faq: [
+      {
+        question: 'How do I pick an Instagram giveaway winner with this wheel?',
+        answer: 'Copy the list of usernames or comments from your contest post, paste them into the entry box, and screen-record spinning the wheel for maximum transparency.',
+      },
+      {
+        question: 'Can I remove the winner if multiple prizes are drawn?',
+        answer: 'Yes, enable "Remove winner after each spin" in the wheel settings to pick multiple distinct winners without duplicate drawings.',
+      },
+    ],
+  },
 ]
