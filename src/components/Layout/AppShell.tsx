@@ -28,6 +28,7 @@ export function AppShell() {
     { label: 'Flag Quiz Picker Wheel', preset: 'Countries', icon: '🚩', labels: ['USA 🇺🇸', 'UK 🇬🇧', 'Canada 🇨🇦', 'Japan 🇯🇵', 'Germany 🇩🇪', 'India 🇮🇳', 'France 🇫🇷', 'Brazil 🇧🇷'] },
     { label: 'Number Picker Wheel', preset: 'Numbers 1-10', icon: '🔢', labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] },
     { label: 'Date Picker Wheel', preset: 'Days of Week', icon: '📅', labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] },
+    { label: 'Lunch Randomizer', to: '/food/what-should-i-eat-for-lunch', icon: '🥪' },
     { label: 'Truth or Dare Picker', preset: 'Truth or Dare', icon: '🎲', labels: ['Truth', 'Dare', 'Truth', 'Dare', 'Double Dare', 'Pass'] },
     { label: 'Letter Picker Wheel', preset: 'Alphabet A-H', icon: '🔤', labels: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] },
     { label: 'Instagram Comment Picker', to: '/random-name-picker', icon: '📷' },
