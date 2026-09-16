@@ -164,6 +164,37 @@ export const WHEEL_TEMPLATES: WheelTemplate[] = [
       },
     ],
   },
+  {
+    slug: 'what-should-i-eat-for-lunch',
+    category: 'food',
+    categoryName: 'Food & Dining',
+    title: 'What Should I Eat for Lunch Randomizer Wheel',
+    h1: 'What Should I Eat for Lunch Randomizer Wheel',
+    metaTitle: 'What Should I Eat for Lunch Randomizer | Random Lunch Decision Wheel',
+    metaDescription: 'Can\'t decide what to eat for lunch today? Spin the free lunch randomizer wheel to instantly pick healthy, fast, or tasty lunch options.',
+    defaultOptions: [
+      '🥪 Deli Sandwich',
+      '🥗 Caesar Salad',
+      '🌯 Burrito / Bowl',
+      '🍕 Pizza Slice',
+      '🍜 Ramen Noodles',
+      '🍔 Burger & Fries',
+      '🍣 Bento / Sushi',
+      '🥘 Soup & Bread',
+      '🥙 Falafel Wrap',
+      '🍚 Fried Rice / Teriyaki',
+    ],
+    faq: [
+      {
+        question: 'How does the lunch randomizer help you decide what to eat?',
+        answer: 'When you are stuck in decision paralysis at lunchtime, spinning the wheel gives you an instant, random lunch choice without debate.',
+      },
+      {
+        question: 'Can I customize the lunch wheel with places near my office or home?',
+        answer: 'Yes! Click on the entry list to add your local deli, food trucks, or cafeteria options with custom weights.',
+      },
+    ],
+  },
 
   // Geography & Trivia Category
   {

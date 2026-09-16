@@ -312,11 +312,11 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
                 <p className="mt-1 text-xs text-[#5c6a72]">Pick students fairly for reading, cold calling, and classroom questions.</p>
               </div>
             </Link>
-            <Link to="/food/what-to-eat-wheel" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
-              <span className="text-2xl" aria-hidden="true">🍕</span>
+            <Link to="/food/what-should-i-eat-for-lunch" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
+              <span className="text-2xl" aria-hidden="true">🥪</span>
               <div>
-                <h3 className="font-bold text-[#10232b]">What to Eat Decision Wheel</h3>
-                <p className="mt-1 text-xs text-[#5c6a72]">Stop dinner arguments by spinning for pizza, burgers, sushi, or tacos.</p>
+                <h3 className="font-bold text-[#10232b]">What Should I Eat for Lunch Randomizer</h3>
+                <p className="mt-1 text-xs text-[#5c6a72]">End lunchtime decision paralysis with an instant random food pick.</p>
               </div>
             </Link>
             <Link to="/gaming/fortnite-drop-picker" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
