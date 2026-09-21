@@ -29,7 +29,8 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
             <li><a href="#file-storage" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">5.</span> File Storage & Local Privacy</a></li>
             <li><a href="#share-embed" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">6.</span> Share & Embed Options</a></li>
             <li><a href="#popular-use-cases" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">7.</span> Real-World Use Cases &amp; Stories</a></li>
-            <li><a href="#faq" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">8.</span> Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="#all-tools-directory" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">8.</span> Decision Wheel Generator Directory</a></li>
+            <li><a href="#faq" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">9.</span> Frequently Asked Questions (FAQ)</a></li>
           </ol>
         </nav>
 
@@ -39,10 +40,10 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
             1. What is Real Picker Wheel?
           </h2>
           <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
-            <strong>Real Picker Wheel</strong> is a modern, stylish, and free online random decision-making spinner tool designed to help individuals, teachers, gamers, and teams make decisions easily and impartially. By inserting choices or names into the wheel, our cryptographically secure pseudo-random number generator (PRNG) picks an unbiased winner with a smooth 60 FPS HTML5 canvas animation and authentic mechanical tick sound effects.
+            <strong>Real Picker Wheel</strong> is the ultimate free online <strong>random picker wheel</strong>, digital <strong>wheel spinner</strong>, and <strong>decision wheel generator</strong> engineered to make every choice effortless, unbiased, and fun. Whether you want to <strong>spin the wheel</strong> to settle a quick dinner debate, need a fair <strong>random name picker</strong> for your classroom, or want to pick raffle winners transparently, our interactive <strong>picker wheel</strong> handles it all with smooth 60 FPS canvas physics and authentic mechanical tick sound effects.
           </p>
           <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
-            Unlike traditional spinners, Real Picker Wheel runs entirely on client-side technology. That means zero ads blocking your wheel, ultra-fast sub-second loading speeds, and 100% privacy because your lists and participant names are never uploaded or sold to external servers.
+            Unlike traditional ad-heavy spinners that lag your browser, Real Picker Wheel runs 100% on client-side technology. That means zero ads blocking your wheel, ultra-fast sub-second loading speeds, and complete privacy because your custom lists and names never leave your device.
           </p>
         </section>
 
@@ -386,10 +387,206 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
           </div>
         </section>
 
-        {/* Section 8: FAQ Section (Matched with FAQPage Schema) */}
+        {/* Section 8: Decision Wheel Generator Directory & Keyword Hub (30+ Specialized Wheels) */}
+        <section id="all-tools-directory" className="scroll-mt-24 space-y-8">
+          <div className="space-y-3">
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
+              8. Decision Wheel Generator Directory: 30+ Specialized Wheels
+            </h2>
+            <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
+              Looking for a specific wheel? Real Picker Wheel offers dedicated spinning wheels engineered for classroom activities, dining dilemmas, gaming squads, and party challenges. Click any link below to open that exact <strong>decision wheel generator</strong>:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Category 1: Classroom & Education */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 shadow-sm space-y-4">
+              <div className="flex items-center gap-2.5 pb-2 border-b border-[#e4d9c8]">
+                <span className="text-2xl">🎓</span>
+                <h3 className="text-lg font-bold text-[#10232b]">Classroom &amp; Education Wheels</h3>
+              </div>
+              <ul className="space-y-3 text-xs sm:text-sm">
+                <li>
+                  <Link to="/education/random-student-generator" className="font-bold text-[#1B6B6B] hover:underline">
+                    Random Student Name Generator Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Fair classroom student picker wheel for cold calling and reading turns.</p>
+                </li>
+                <li>
+                  <Link to="/education/classroom-group-picker" className="font-bold text-[#1B6B6B] hover:underline">
+                    Classroom Group Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random team generator wheel to divide students into balanced project groups.</p>
+                </li>
+                <li>
+                  <Link to="/education/number-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Number Picker Wheel 1-10
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random number generator wheel for math bingo, raffles, and probability.</p>
+                </li>
+                <li>
+                  <Link to="/education/letter-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Letter Picker Wheel A-Z
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Alphabet wheel spinner for spelling bees, vocabulary practice, and word games.</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Category 2: Food & Meal Decision Wheels */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 shadow-sm space-y-4">
+              <div className="flex items-center gap-2.5 pb-2 border-b border-[#e4d9c8]">
+                <span className="text-2xl">🍕</span>
+                <h3 className="text-lg font-bold text-[#10232b]">Food &amp; Meal Decision Wheels</h3>
+              </div>
+              <ul className="space-y-3 text-xs sm:text-sm">
+                <li>
+                  <Link to="/food/what-should-i-eat-for-lunch" className="font-bold text-[#1B6B6B] hover:underline">
+                    What Should I Eat for Lunch Randomizer
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Fast lunch decision wheel spinner for office lunches, takeout, and delivery.</p>
+                </li>
+                <li>
+                  <Link to="/food/what-to-eat-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    What to Eat Decision Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Comprehensive dining decision wheel covering pizza, sushi, ramen, and salads.</p>
+                </li>
+                <li>
+                  <Link to="/food/fast-food-picker" className="font-bold text-[#1B6B6B] hover:underline">
+                    Fast Food Restaurant Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random fast food restaurant decider covering top burger and taco drive-thrus.</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Category 3: Sports & Team Pickers */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 shadow-sm space-y-4">
+              <div className="flex items-center gap-2.5 pb-2 border-b border-[#e4d9c8]">
+                <span className="text-2xl">🏀</span>
+                <h3 className="text-lg font-bold text-[#10232b]">Sports &amp; Team Picker Wheels</h3>
+              </div>
+              <ul className="space-y-3 text-xs sm:text-sm">
+                <li>
+                  <Link to="/teams/team-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Team Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random sports team generator wheel to split players fairly without arguments.</p>
+                </li>
+                <li>
+                  <Link to="/teams/nba-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    NBA Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random NBA basketball team generator for NBA 2K matches and fantasy drafts.</p>
+                </li>
+                <li>
+                  <Link to="/teams/nfl-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    NFL Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random NFL football team spinner for Madden tournaments and game day picks.</p>
+                </li>
+                <li>
+                  <Link to="/teams/mlb-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    MLB Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random baseball team generator wheel featuring Major League Baseball franchises.</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Category 4: Party, Games & Social Wheels */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 shadow-sm space-y-4">
+              <div className="flex items-center gap-2.5 pb-2 border-b border-[#e4d9c8]">
+                <span className="text-2xl">🎲</span>
+                <h3 className="text-lg font-bold text-[#10232b]">Party, Games &amp; Social Wheels</h3>
+              </div>
+              <ul className="space-y-3 text-xs sm:text-sm">
+                <li>
+                  <Link to="/games/yes-no-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Yes No Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Unbiased yes or no wheel generator for 50/50 binary decisions and digital coin flips.</p>
+                </li>
+                <li>
+                  <Link to="/games/truth-or-dare-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Truth or Dare Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Exciting truth or dare game spinner for parties, sleepovers, and game nights.</p>
+                </li>
+                <li>
+                  <Link to="/games/color-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Random Color Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Color generator wheel for graphic design palettes, painting, and art challenges.</p>
+                </li>
+                <li>
+                  <Link to="/games/image-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Image Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Visual emoji and icon wheel spinner for pictionary and creative prompts.</p>
+                </li>
+                <li>
+                  <Link to="/tools/instagram-comment-picker" className="font-bold text-[#1B6B6B] hover:underline">
+                    Instagram Comment Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Free giveaway winner randomizer wheel for transparent social media contests.</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Category 5: Geography, Gaming & Utility Wheels */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 shadow-sm space-y-4 md:col-span-2">
+              <div className="flex items-center gap-2.5 pb-2 border-b border-[#e4d9c8]">
+                <span className="text-2xl">🌍</span>
+                <h3 className="text-lg font-bold text-[#10232b]">Geography, Gaming &amp; Daily Utility Tools</h3>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-sm">
+                <div>
+                  <Link to="/geography/country-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Country Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random world country generator for GeoGuessr, geography trivia, and travel.</p>
+                </div>
+                <div>
+                  <Link to="/geography/state-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    US State Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">50 states random generator wheel for geography school projects and road trips.</p>
+                </div>
+                <div>
+                  <Link to="/geography/flag-quiz-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Flag Quiz Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random country flag quiz spinner with world flag emojis.</p>
+                </div>
+                <div>
+                  <Link to="/tools/date-picker-wheel" className="font-bold text-[#1B6B6B] hover:underline">
+                    Date Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random day of the week wheel for weekly scheduling and chore assignment.</p>
+                </div>
+                <div>
+                  <Link to="/gaming/fortnite-drop-picker" className="font-bold text-[#1B6B6B] hover:underline">
+                    Fortnite Drop Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random Fortnite landing location wheel for intense battle royale drops.</p>
+                </div>
+                <div>
+                  <Link to="/gaming/apex-legends-picker" className="font-bold text-[#1B6B6B] hover:underline">
+                    Apex Legends Picker Wheel
+                  </Link>
+                  <p className="text-xs text-[#5c6a72] mt-0.5">Random character generator wheel for squad maining and challenge runs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 9: FAQ Section (Matched with FAQPage Schema) */}
         <section id="faq" className="scroll-mt-24 space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
-            8. Frequently Asked Questions (FAQ)
+            9. Frequently Asked Questions (FAQ)
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, idx) => (

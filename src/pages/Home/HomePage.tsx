@@ -40,14 +40,14 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="Picker Wheel - Spin the Wheel to Decide a Random Choice"
-        description="Free random picker wheel to decide a random choice fairly. Insert names, numbers, or choices, spin the wheel with 60 FPS animation and sound effects, and pick a random winner instantly."
+        title="Real Picker Wheel - Free Random Picker Wheel, Wheel Spinner & Decision Generator"
+        description="Real Picker Wheel is the ultimate free online random picker wheel and decision wheel generator. Spin the wheel to pick random names, numbers, lunch choices, or make fair yes/no decisions with 60 FPS animation."
         path="/"
         faq={HOME_FAQS}
       />
       <WheelWorkbench
-        heading="Spin a random picker wheel"
-        subheading="Make quick Yes or No decisions or add your own custom choices, then spin. Real Picker Wheel picks one option at random with a smooth, readable wheel — on desktop or phone."
+        heading="Real Picker Wheel - Free Random Picker Wheel"
+        subheading="Make quick Yes or No decisions, pick random names, or add your own custom choices and spin the wheel. Real Picker Wheel picks one option at random with smooth 60 FPS animation and 100% fairness."
         showHomeSeo={true}
       />
     </>
