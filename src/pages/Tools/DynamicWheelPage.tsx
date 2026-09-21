@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, Navigate, Link } from 'react-router-dom'
 import { Seo } from '../../components/Seo/Seo'
 import { WHEEL_TEMPLATES } from '../../data/templates'
+import { TOOL_GUIDES } from '../../data/toolGuides'
 import { useWheel } from '../../hooks/useWheelStore'
 import { WheelWorkbench } from '../Home/WheelWorkbench'
 
@@ -22,6 +23,8 @@ export function DynamicWheelPage() {
   if (!template) {
     return <Navigate to="/" replace />
   }
+
+  const guide = TOOL_GUIDES[template.slug]
 
   const relatedTools = WHEEL_TEMPLATES.filter(
     (t) => t.category === template.category && t.slug !== template.slug
@@ -51,7 +54,7 @@ export function DynamicWheelPage() {
           </ol>
         </nav>
 
-        {/* Section 1: About This Tool */}
+        {/* Section 1: Overview */}
         <section className="space-y-4">
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
             About {template.title}
@@ -63,6 +66,59 @@ export function DynamicWheelPage() {
             Powered by <strong>Real Picker Wheel</strong>, this tool guarantees 100% fair and unbiased results with every spin using a cryptographic pseudo-random number generator algorithm. All options are processed purely in your browser for absolute privacy and zero lag.
           </p>
         </section>
+
+        {/* Section 2: In-Depth Essay Guide (Unique per tool) */}
+        {guide && (
+          <section className="space-y-5 rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-8 shadow-sm">
+            <h2 className="text-xl sm:text-2xl font-black text-[#10232b]">
+              {guide.essayTitle}
+            </h2>
+            <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[#3e4c59]">
+              {guide.essayParagraphs.map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
+            </div>
+
+            {/* Target Keywords Badges */}
+            {guide.targetKeywords && guide.targetKeywords.length > 0 && (
+              <div className="pt-4 border-t border-[#e4d9c8] space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#5c6a72]">
+                  Target Search Queries &amp; Related Keywords:
+                </span>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {guide.targetKeywords.map((kw, idx) => (
+                    <span
+                      key={idx}
+                      className="inline-flex items-center rounded-lg bg-[#fbf6ee] border border-[#d7cfc2] px-2.5 py-1 text-xs font-semibold text-[#1B6B6B]"
+                    >
+                      #{kw}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* Section 3: Pro Tips (Unique per tool) */}
+        {guide && guide.proTips && guide.proTips.length > 0 && (
+          <section className="space-y-6">
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
+              Pro-Tips for Better Spins
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {guide.proTips.map((tip, idx) => (
+                <div key={idx} className="rounded-2xl border border-[#d7cfc2] bg-white p-5 shadow-sm space-y-2">
+                  <div className="flex items-center gap-2 text-base font-bold text-[#10232b]">
+                    <span>💡</span>
+                    <h3>{tip.title}</h3>
+                  </div>
+                  <p className="text-xs sm:text-sm leading-relaxed text-[#5c6a72]">{tip.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Section 2: How to Use */}
         <section className="space-y-6">
