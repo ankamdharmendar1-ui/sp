@@ -28,7 +28,7 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
             <li><a href="#action-modes" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">4.</span> Action Modes (Normal vs Elimination)</a></li>
             <li><a href="#file-storage" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">5.</span> File Storage & Local Privacy</a></li>
             <li><a href="#share-embed" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">6.</span> Share & Embed Options</a></li>
-            <li><a href="#popular-use-cases" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">7.</span> Popular Use Cases</a></li>
+            <li><a href="#popular-use-cases" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">7.</span> Real-World Use Cases &amp; Stories</a></li>
             <li><a href="#faq" className="hover:underline flex items-center gap-2"><span className="text-[#5c6a72]">8.</span> Frequently Asked Questions (FAQ)</a></li>
           </ol>
         </nav>
@@ -281,58 +281,108 @@ export function HomeSeoContent({ faqs }: HomeSeoContentProps) {
           </ul>
         </section>
 
-        {/* Section 7: Popular Use Cases */}
-        <section id="popular-use-cases" className="scroll-mt-24 space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
-            7. Popular Use Cases &amp; Category Presets
-          </h2>
-          <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
-            Easily navigate between our specialized decision wheels directly from the top navigation bar. Click the <strong>Tools</strong> dropdown to access pre-configured wheels for sports, classroom games, and binary choices:
-          </p>
+        {/* Section 7: Popular Use Cases & Real-World Stories */}
+        <section id="popular-use-cases" className="scroll-mt-24 space-y-8">
+          <div className="space-y-3">
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
+              7. Real-World Use Cases: How People Use Real Picker Wheel
+            </h2>
+            <p className="text-sm sm:text-base leading-relaxed text-[#3e4c59]">
+              Every single day, thousands of teachers, team leads, gamers, and friends use <strong>Real Picker Wheel</strong> to cut through decision fatigue and bring fairness to daily choices. Whether you need an ad-free <strong>wheel of names</strong> for school, a quick <strong>wheel spinner</strong> for party night, or an unbiased <strong>random wheel</strong> to pick lunch, here is how people put our interactive spinner to work in real life:
+            </p>
+          </div>
 
-          <figure className="rounded-2xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 shadow-xs max-w-lg mx-auto">
-            <img
-              src="/step-tools-nav.png"
-              alt="Real Picker Wheel header navigation showing Wheel, How to use, About, Contact, and Tools menu"
-              className="rounded-xl border border-[#e4d9c8] w-full object-contain bg-white"
-              loading="lazy"
-              width="500"
-              height="80"
-            />
-            <figcaption className="mt-2 text-center text-xs font-semibold text-[#5c6a72]">
-              Top navigation bar: quickly explore specialized wheels under the Tools menu.
-            </figcaption>
-          </figure>
+          <div className="space-y-6">
+            {/* Story 1: Classroom & Education */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-7 shadow-sm space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1B6B6B]/10 text-2xl">🎓</span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#10232b]">The Classroom Favorite: Fair Student Cold-Calling</h3>
+                  <span className="text-xs font-semibold text-[#1B6B6B]">Used by Teachers &amp; Educators</span>
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                Teachers used to rely on popsicle sticks in jars or handwritten flashcards to call on students during morning reading or pop quizzes. Today, educators project our <Link to="/education/random-student-generator" className="font-semibold text-[#1B6B6B] hover:underline">random student generator</Link> directly onto the classroom smartboard. When students watch the <strong>random name picker</strong> accelerate with authentic mechanical clicks, nervousness turns into genuine excitement.
+              </p>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                Many teachers switch to <strong>Real Picker Wheel</strong> as a lightweight, clean alternative to a traditional <strong>wheel of names</strong> because there are zero intrusive banner ads and zero trackers. When it is time for group work, educators tap into our <Link to="/education/classroom-group-picker" className="font-semibold text-[#1B6B6B] hover:underline">classroom group picker</Link> to divide the entire roster into balanced teams with just one spin.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link to="/education/random-student-generator" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
-              <span className="text-2xl" aria-hidden="true">🎓</span>
-              <div>
-                <h3 className="font-bold text-[#10232b]">Random Student Name Picker</h3>
-                <p className="mt-1 text-xs text-[#5c6a72]">Pick students fairly for reading, cold calling, and classroom questions.</p>
+            {/* Story 2: Daily Lunch & Workplace Deadlocks */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-7 shadow-sm space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#F2CC8F]/30 text-2xl">🥪</span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#10232b]">Ending Decision Paralysis: The 12:30 PM Lunch Debate</h3>
+                  <span className="text-xs font-semibold text-[#B36B00]">Used by Coworkers &amp; Busy Professionals</span>
+                </div>
               </div>
-            </Link>
-            <Link to="/food/what-should-i-eat-for-lunch" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
-              <span className="text-2xl" aria-hidden="true">🥪</span>
-              <div>
-                <h3 className="font-bold text-[#10232b]">What Should I Eat for Lunch Randomizer</h3>
-                <p className="mt-1 text-xs text-[#5c6a72]">End lunchtime decision paralysis with an instant random food pick.</p>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                Almost every office experiences that classic lunchtime deadlock: <em>"Where should we go today?"</em> followed by ten minutes of <em>"I don't know, anything is fine."</em> Coworkers open our dedicated <Link to="/food/what-should-i-eat-for-lunch" className="font-semibold text-[#1B6B6B] hover:underline">what should i eat for lunch randomizer</Link> on their phone, tap to <strong>spin the wheel</strong>, and settle the debate instantly between deli sandwiches, ramen bowls, fresh sushi, or burritos.
+              </p>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                For simpler dilemmas—like who pays for coffee, which project to tackle first, or whether to go to the gym—the <Link to="/games/yes-no-picker-wheel" className="font-semibold text-[#1B6B6B] hover:underline">yes no picker wheel</Link> acts as a modernized digital coin toss with strict 50/50 mathematical fairness.
+              </p>
+            </div>
+
+            {/* Story 3: Streamers & Giveaways */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-7 shadow-sm space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#e85d4c]/10 text-2xl">🎁</span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#10232b]">Transparent Raffles &amp; Stream Giveaways</h3>
+                  <span className="text-xs font-semibold text-[#e85d4c]">Used by Streamers, Creators &amp; Event Organizers</span>
+                </div>
               </div>
-            </Link>
-            <Link to="/gaming/fortnite-drop-picker" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
-              <span className="text-2xl" aria-hidden="true">🎮</span>
-              <div>
-                <h3 className="font-bold text-[#10232b]">Gaming POI &amp; Character Drop Picker</h3>
-                <p className="mt-1 text-xs text-[#5c6a72]">Random landing spots and character challenges for Fortnite and Apex.</p>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                Nothing builds community trust like verifiable transparency. When content creators host live raffles on Twitch, YouTube, or Discord, they paste subscriber usernames into our <strong>picker wheel</strong> and spin live on stream. The smooth 60 FPS canvas motion and dynamic tick deceleration prove to viewers that no backend rigging is taking place.
+              </p>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                With our built-in <strong>Elimination Mode</strong>, winners are automatically removed after each draw, allowing hosts to award 1st, 2nd, and 3rd place prizes without duplicate spins or accidental repeats.
+              </p>
+            </div>
+
+            {/* Story 4: Game Nights & Social Fun */}
+            <div className="rounded-3xl border border-[#d7cfc2] bg-white p-6 sm:p-7 shadow-sm space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1B6B6B]/10 text-2xl">🎲</span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#10232b]">Parties &amp; Game Nights: Keeping the Momentum Going</h3>
+                  <span className="text-xs font-semibold text-[#1B6B6B]">Used by Friends, Families &amp; Gamers</span>
+                </div>
               </div>
-            </Link>
-            <Link to="/games/truth-or-dare-wheel" className="flex items-start gap-3.5 rounded-2xl border border-[#d7cfc2] bg-white p-4 shadow-sm hover:border-[#1B6B6B] transition-colors">
-              <span className="text-2xl" aria-hidden="true">🎲</span>
-              <div>
-                <h3 className="font-bold text-[#10232b]">Party Games &amp; Truth or Dare</h3>
-                <p className="mt-1 text-xs text-[#5c6a72]">Fun sleepover games, team assignments, and giveaway prize draws.</p>
-              </div>
-            </Link>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                Whether you are gathering around the living room for a sleepover or hosting virtual trivia with distant friends, an interactive <strong>wheel spinner</strong> brings infectious energy. Jump right into our <Link to="/games/truth-or-dare-wheel" className="font-semibold text-[#1B6B6B] hover:underline">truth or dare wheel</Link> for spontaneous party challenges, or spin the <Link to="/games/color-picker-wheel" className="font-semibold text-[#1B6B6B] hover:underline">color picker wheel</Link> for drawing and pictionary prompts.
+              </p>
+              <p className="text-sm leading-relaxed text-[#3e4c59]">
+                Competitive gamers also use our <Link to="/gaming/fortnite-drop-picker" className="font-semibold text-[#1B6B6B] hover:underline">Fortnite drop picker</Link> and <Link to="/teams/team-picker-wheel" className="font-semibold text-[#1B6B6B] hover:underline">team picker wheel</Link> to eliminate squad arguments about landing spots and balanced squad captains.
+              </p>
+            </div>
+          </div>
+
+          {/* Quick-Access Grid to Popular Wheels */}
+          <div className="pt-2">
+            <h3 className="text-base font-bold text-[#10232b] mb-3">Explore Popular Specialized Wheels:</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs font-semibold">
+              <Link to="/games/yes-no-picker-wheel" className="flex items-center gap-2 rounded-xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 hover:border-[#1B6B6B] hover:bg-white transition-colors">
+                <span className="text-base">💬</span>
+                <span className="truncate">Yes or No Wheel</span>
+              </Link>
+              <Link to="/food/what-should-i-eat-for-lunch" className="flex items-center gap-2 rounded-xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 hover:border-[#1B6B6B] hover:bg-white transition-colors">
+                <span className="text-base">🥪</span>
+                <span className="truncate">Lunch Randomizer</span>
+              </Link>
+              <Link to="/education/random-student-generator" className="flex items-center gap-2 rounded-xl border border-[#d7cfc2] bg-[#fbf6ee] p-3 hover:border-[#1B6B6B] hover:bg-white transition-colors">
+                <span className="text-base">🎓</span>
+                <span className="truncate">Student Name Picker</span>
+              </Link>
+              <Link to="/random-wheel" className="flex items-center gap-2 rounded-xl border border-[#1B6B6B] bg-[#1B6B6B]/10 p-3 text-[#1B6B6B] hover:bg-[#1B6B6B] hover:text-white transition-colors">
+                <span className="text-base">✨</span>
+                <span className="truncate">View All 22+ Tools →</span>
+              </Link>
+            </div>
           </div>
         </section>
 
