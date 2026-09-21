@@ -1,0 +1,41 @@
+# Real Picker Wheel
+
+> Real Picker Wheel (https://www.realpickerwheel.com) is a free, fast, and privacy-first online random decision maker and interactive spinning wheel platform with 22+ specialized tools.
+
+Real Picker Wheel provides a mathematically fair, cryptographically secure pseudo-random number generator (PRNG) for making unbiased choices. It runs 100% client-side in the user's web browser, featuring 60 FPS HTML5 Canvas animations, Web Audio API sound synthesis, custom weights, elimination mode, and shareable/embeddable wheels with zero user data collection.
+
+## Core Decision Wheels & Tools
+
+- [Picker Wheel](https://www.realpickerwheel.com/): The primary random decision wheel for names, numbers, choices, and raffles with Yes/No default.
+- [Yes or No Wheel](https://www.realpickerwheel.com/games/yes-no-picker-wheel): Instant 50/50 binary decision maker with equal probability.
+- [What Should I Eat for Lunch Randomizer](https://www.realpickerwheel.com/food/what-should-i-eat-for-lunch): Instant meal decider for office and daily lunch choices.
+- [What to Eat Decision Wheel](https://www.realpickerwheel.com/food/what-to-eat-wheel): Random dining and dinner selector across major food categories.
+- [Fast Food Restaurant Picker](https://www.realpickerwheel.com/food/fast-food-picker): Random fast food restaurant decider.
+- [Random Student Name Generator](https://www.realpickerwheel.com/education/random-student-generator): Fair classroom name picker for teachers and students.
+- [Classroom Group & Team Picker](https://www.realpickerwheel.com/education/classroom-group-picker): Randomly divide students into balanced classroom groups.
+- [Number Picker Wheel (1-10)](https://www.realpickerwheel.com/education/number-picker-wheel): Random number generator from 1 to 10 or custom ranges.
+- [Letter Picker Wheel (A-Z)](https://www.realpickerwheel.com/education/letter-picker-wheel): Random alphabet letter generator for spelling, phonics, and word games.
+- [Team Picker Wheel](https://www.realpickerwheel.com/teams/team-picker-wheel): Split players, colleagues, or students into random teams.
+- [NBA Team Picker Wheel](https://www.realpickerwheel.com/teams/nba-picker-wheel): Random NBA basketball team selector for fantasy leagues and video games.
+- [NFL Team Picker Wheel](https://www.realpickerwheel.com/teams/nfl-picker-wheel): Random NFL football team spinner for sports pick'ems and fantasy drafts.
+- [MLB Team Picker Wheel](https://www.realpickerwheel.com/teams/mlb-picker-wheel): Random Major League Baseball team generator.
+- [Country Picker Wheel](https://www.realpickerwheel.com/geography/country-picker-wheel): Random world country selector for geography quizzes, GeoGuessr, and travel.
+- [US State Picker Wheel](https://www.realpickerwheel.com/geography/state-picker-wheel): Random 50 US states generator for trivia and educational projects.
+- [Flag Quiz Picker Wheel](https://www.realpickerwheel.com/geography/flag-quiz-picker-wheel): Interactive country flag trivia generator with flag emojis.
+- [Truth or Dare Game Wheel](https://www.realpickerwheel.com/games/truth-or-dare-wheel): Random Truth or Dare selector for parties and game nights.
+- [Color Picker Wheel](https://www.realpickerwheel.com/games/color-picker-wheel): Random color generator for art challenges, design, and games.
+- [Image Picker Wheel](https://www.realpickerwheel.com/games/image-picker-wheel): Visual emoji and icon spinning wheel for pictionary and creative prompts.
+- [Date Picker Wheel](https://www.realpickerwheel.com/tools/date-picker-wheel): Random day of the week selector for scheduling and chore assignment.
+- [Instagram Comment Picker](https://www.realpickerwheel.com/tools/instagram-comment-picker): Fair giveaway and contest winner selector.
+- [Fortnite Drop Location Wheel](https://www.realpickerwheel.com/gaming/fortnite-drop-picker): Random Battle Royale POI landing selector.
+- [Apex Legends Character Picker](https://www.realpickerwheel.com/gaming/apex-legends-picker): Random legend selector for Apex Legends matches.
+- [All Tools Directory](https://www.realpickerwheel.com/random-wheel): Complete catalog of all 22+ interactive spinning wheel tools.
+
+## Documentation & Information
+
+- [How to Use the Picker Wheel](https://www.realpickerwheel.com/how-to-use): Step-by-step walkthrough covering entry inputs, weights, custom themes, and iframe embeds.
+- [About Us](https://www.realpickerwheel.com/about): Mission, technical architecture, and client-side privacy guarantee.
+- [Contact Support](https://www.realpickerwheel.com/contact): Inquiries, feedback, and support channels.
+- [Privacy Policy](https://www.realpickerwheel.com/privacy): Detailed information on zero server data collection and local storage persistence.
+- [Terms of Service](https://www.realpickerwheel.com/terms): Terms of use and fair use policies.
+- [XML Sitemap](https://www.realpickerwheel.com/sitemap.xml): Complete machine-readable URL index for search engines and crawlers.
