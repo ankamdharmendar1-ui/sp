@@ -7,11 +7,11 @@ export interface ToolGuide {
 
 export const TOOL_GUIDES: Record<string, ToolGuide> = {
   "random-student-generator": {
-    "essayTitle": "The Complete Guide to Fair Classroom Student Selection",
+    "essayTitle": "Why Teachers Are Swapping Popsicle Sticks for a Digital Spinner",
     "essayParagraphs": [
-      "Every teacher knows the challenge of keeping an entire classroom actively engaged while ensuring fairness during cold-calling, reading aloud, and group presentations. Traditional methods like drawing popsicle sticks from a jar or flipping index cards are prone to human bias, wear out over time, and can leave students feeling singled out.",
-      "The Random Student Name Generator Wheel transforms classroom participation into a transparent, gamified experience. When students watch the 60 FPS spinning wheel slow down on the smartboard, anticipation builds, and participation anxiety drops because everyone sees that the outcome is completely randomized and mathematically unbiased.",
-      "By utilizing Real Picker Wheel's built-in Elimination Mode, teachers can automatically remove a student's name once called upon. This guarantees that every single student gets a turn before anyone is repeated, keeping learners alert, attentive, and confident throughout the entire lesson."
+      "If you have ever stood in front of a classroom holding a jar of wooden popsicle sticks, you know the struggle. Names fade over time, sticks end up on the floor, and students will swear you are always picking on the front row. Worst of all, accidentally calling on the same quiet student twice in ten minutes can derail their confidence for the rest of the week.",
+      "This wheel changes the whole atmosphere of the room. The moment you project it onto the smartboard, kids instantly sit up and pay attention. The mechanical ticking sound builds real suspense, and because every single student name is clearly visible on screen, nobody can claim favoritism or teacher bias.",
+      "If you turn on Elimination Mode, called students are automatically removed from the wheel. That means every pupil gets their turn to read, answer questions, or lead the line before anyone repeats. It keeps the whole class engaged, takes the pressure off your shoulders, and saves you precious instructional minutes every single day."
     ],
     "targetKeywords": [
       "random student generator",
@@ -23,21 +23,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Use Elimination Mode for 100% Turn Coverage",
-        "description": "Toggle \"Remove winner after each spin\" in the wheel settings to ensure every pupil has their turn before names reset."
+        "title": "Use Elimination Mode for Fair Turns",
+        "description": "Turn on \"Remove winner after each spin\" in the wheel settings so every child gets called on before names reset."
       },
       {
-        "title": "Save Class Rosters Privately",
-        "description": "Your class rosters are stored strictly in your browser's local storage, ensuring complete compliance with student privacy regulations."
+        "title": "Your Rosters Stay 100% Private",
+        "description": "All student lists are saved strictly in your local browser storage—no student names or data are ever uploaded to external servers."
       }
     ]
   },
   "classroom-group-picker": {
-    "essayTitle": "Effortless Cooperative Learning: How to Divide Classes into Balanced Teams",
+    "essayTitle": "Fair Group Projects Without the Social Drama",
     "essayParagraphs": [
-      "Cooperative learning is one of the most proven instructional strategies in modern education, fostering communication, empathy, and collaborative problem-solving among students. However, when students choose their own groups, social cliques form, leaving quieter or newer learners feeling excluded.",
-      "The Classroom Group Picker Wheel removes social friction by letting pure mathematical probability assign groups and team stations. Whether you are running science laboratory rotations, literature circles, or peer-editing workshops, a quick spin settles team placement in seconds.",
-      "Educators can spin to assign student captains, match study buddies, or assign multi-colored table teams. The transparent visual display helps manage classroom transitions seamlessly with zero arguments."
+      "Letting students pick their own project groups usually leads to two problems: best friends immediately cluster together, and one or two quiet students end up sitting alone wondering where to go. On the flip side, manually creating groups yourself takes forever and leaves you defending your choices against complaints.",
+      "The Classroom Group Picker Wheel takes all the awkwardness out of teamwork. By letting a transparent, randomized spinner divide the room, students readily accept their assignments because the computer made the call fairly.",
+      "Whether you are running science lab rotations, peer-editing workshops, or quick 5-minute study tables, a couple of spins assigns captains, pairs up study partners, and gets everyone working together with zero fuss."
     ],
     "targetKeywords": [
       "classroom group picker",
@@ -49,21 +49,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Assign Table Stations Quickly",
-        "description": "Label your slices Station 1 through Station 6 to quickly route student tables through active learning centers."
+        "title": "Assign Learning Stations in Seconds",
+        "description": "Put Station 1 through Station 6 on the wheel to quickly rotate student tables through active learning centers."
       },
       {
-        "title": "Balanced Project Roles",
-        "description": "Spin to assign project roles such as Note Taker, Timekeeper, Presenter, and Researcher."
+        "title": "Rotate Team Roles Effortlessly",
+        "description": "Spin to assign project roles like Note Taker, Timekeeper, Presenter, and Lead Researcher."
       }
     ]
   },
   "letter-picker-wheel": {
-    "essayTitle": "Mastering Alphabet Games, Phonics & Vocabulary Drills with a Letter Wheel",
+    "essayTitle": "Bringing Alphabet Games and Spelling Drills to Life",
     "essayParagraphs": [
-      "From early childhood phonics to high-stakes adult Scrabble matches and vocabulary games, random letter generation is a foundational mechanic in language learning. The Letter Picker Wheel provides a smooth A-to-Z spinning wheel that brings kinetic energy to spelling lessons and creative writing exercises.",
-      "In early education, teachers use the letter spinner for letter-sound correspondence drills. When the needle lands on \"M\", young learners shout out the \"mmm\" sound and name an animal or object starting with that letter. For older students, it powers speed-spelling challenges, Scattergories rounds, and constrained creative writing prompts.",
-      "Because every letter slice has an identical mathematical width and probability, the letter wheel eliminates letter repetition bias and encourages students to practice lesser-used vowels and consonants like Q, X, and Z."
+      "Rolling letter dice or pulling wooden tiles out of a bag sounds easy until half the pieces disappear under the couch. This A-to-Z spinner is a quick, mess-free way to run vocabulary warm-ups, phonics drills, and word games.",
+      "Elementary teachers love it for letter-sound recognition. When the wheel stops on B, kids call out the \"buh\" sound and name three animals starting with that letter. For older kids and adults, it is great for speed-spelling warm-ups, Scattergories rounds, and creative writing prompts where every sentence must begin with a certain letter.",
+      "Every letter has an identical chance of being picked, so players get plenty of practice with commonly skipped letters like J, Q, X, and Z without any repetition bias."
     ],
     "targetKeywords": [
       "letter picker wheel",
@@ -75,21 +75,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Vowel vs Consonant Practice",
-        "description": "Delete consonants to create a specialized 5-slice Vowel Wheel (A, E, I, O, U) for targeted phonics instruction."
+        "title": "Focus on Vowels Only",
+        "description": "Delete consonants to create a targeted 5-slice Vowel Wheel (A, E, I, O, U) for early reading instruction."
       },
       {
-        "title": "Scattergories & Word Challenges",
-        "description": "Spin once at the beginning of each round to decide the mandatory starting letter for all categories."
+        "title": "Scattergories Game Nights",
+        "description": "Spin once at the start of each round to lock in the mandatory starting letter for all categories."
       }
     ]
   },
   "number-picker-wheel": {
-    "essayTitle": "Random Numbers Made Visual: Probability, Math Games & Fair Raffles",
+    "essayTitle": "A Cleaner, Fairer Way to Pick Random Numbers",
     "essayParagraphs": [
-      "Physical dice can get lost, roll off desks, or carry manufacturing weight imbalances that bias results. The Number Picker Wheel provides a visually rich, mathematically sound alternative that scales dynamically from simple 1-to-10 number identification up to multi-digit raffle draws.",
-      "For math educators, this wheel is an indispensable asset for demonstrating theoretical versus experimental probability. Students record spin frequencies, calculate percentages, and compare live empirical spin distributions against expected statistical outcomes.",
-      "Beyond education, event coordinators use the number spinner for door prize draws, silent auction ticket selections, and randomized bingo calls. Real Picker Wheel's cryptographic pseudo-random number generator ensures that every number slice has an exactly equal chance to win."
+      "Physical dice love to bounce off tables, hide under chairs, and roll numbers that people argue over. The Number Picker Wheel gives you a clean, clear visual draw that scales easily from a quick 1-to-10 roll up to large multi-digit raffle drawings.",
+      "In math classes, it is one of the best ways to teach kids about probability in action. Students can track spin results in a notebook, calculate percentages, and see how theoretical odds match up against real-world spins.",
+      "Event hosts also use it for door prizes, silent auctions, and casual bingo nights. Every number slice has an exact mathematical chance of winning, backed by cryptographic randomization."
     ],
     "targetKeywords": [
       "number picker wheel 1-10",
@@ -101,21 +101,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Custom Number Ranges",
-        "description": "Paste any sequence into the entry editor—such as numbers 1 through 50 or 100—for large raffle draws."
+        "title": "Paste Any Number Range",
+        "description": "Paste any list of numbers into the entry box—like 1 through 50 or 100—for school raffles and door prizes."
       },
       {
-        "title": "Mathematical Weighting",
-        "description": "Enable weighted mode to simulate unfair coin flips or demonstrate weighted average concepts in statistics classes."
+        "title": "Simulate Weighted Odds",
+        "description": "Give certain numbers higher weights to demonstrate weighted averages or simulate unfair game mechanics in statistics class."
       }
     ]
   },
   "team-picker-wheel": {
-    "essayTitle": "No More Playground Politics: Generating Fair, Balanced Sports Teams",
+    "essayTitle": "Say Goodbye to Awkward Playground Team Captains",
     "essayParagraphs": [
-      "Anyone who has ever played pickup sports or participated in a corporate team-building event knows the awkward discomfort of schoolyard captains picking team members one by one. The last few players feel embarrassed, while the teams often end up unbalanced and uncompetitive.",
-      "The Team Picker Wheel completely solves this issue by letting pure algorithmic randomness assign rosters. Whether organizing pickup basketball, soccer scrimmages, intramural dodgeball, or hackathon squads, the wheel ensures immediate fairness and high team camaraderie.",
-      "By entering participant names and assigning them to team slices, organizers eliminate all subjective favoritism. Matches start faster, games are more competitive, and everyone enjoys a genuinely sportsmanlike experience."
+      "We all remember gym class when two captains picked teams one player at a time. Being picked last feels terrible, and the teams almost never end up balanced anyway. It is awkward, slow, and leads to one-sided games.",
+      "The Team Picker Wheel eliminates all that playground politics. Just paste in everyone who showed up to play, spin the wheel, and place players alternately into Team A and Team B. Nobody feels singled out, and the game starts in under a minute.",
+      "It works just as well for weekend soccer scrimmages, intramural dodgeball, corporate hackathons, and video game squad nights. Fair teams make for much closer, more exciting games."
     ],
     "targetKeywords": [
       "team picker wheel",
@@ -127,21 +127,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Elimination for Rostering",
+        "title": "Turn on Elimination for Rosters",
         "description": "Put all player names on the wheel, spin one by one, and place winners alternately into Team Alpha and Team Bravo."
       },
       {
-        "title": "Corporate Hackathons",
-        "description": "Randomly assemble interdisciplinary project teams combining engineers, designers, and marketers."
+        "title": "Corporate Team Building",
+        "description": "Mix departments by randomly assigning engineers, designers, and marketers into balanced project squads."
       }
     ]
   },
   "nba-picker-wheel": {
-    "essayTitle": "Take Your Basketball Gaming & Fantasy Leagues to the Next Level",
+    "essayTitle": "Shake Up Your NBA 2K Franchise & Watch Nights",
     "essayParagraphs": [
-      "Whether you are diving into NBA 2K franchise mode, hosting a weekend gaming tournament with friends, or deciding which neutral NBA game to watch on League Pass tonight, the NBA Team Picker Wheel adds instant excitement to your basketball fandom.",
-      "Gamers love using the NBA wheel for rebuild challenges in 2K. Instead of always picking the heavyweight Lakers, Celtics, or Warriors, spinning the wheel might land you on an underdog team like the Magic or Pacers, challenging your managerial skills to build a championship roster from scratch.",
-      "Fantasy basketball commissioners also use the NBA wheel for live draft order lottery reveals, mirroring the NBA Draft Lottery drama with mechanical tick sounds and confetti celebrations."
+      "Let us be honest: always playing with the Lakers, Celtics, or Warriors gets old quickly. If you want a genuine challenge in your next NBA 2K franchise save, let the wheel assign your team.",
+      "Landing on a young, scrappy roster forces you to actually learn playbooks, manage salary caps, and develop bench talent instead of relying on superstar cheese. You will discover underrated players you never would have used otherwise.",
+      "Fantasy basketball commissioners also use the wheel for draft lottery reveals, giving their league group chat the thrill of an authentic NBA Draft Lottery reveal with sound effects and confetti."
     ],
     "targetKeywords": [
       "nba picker wheel",
@@ -154,20 +154,20 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     "proTips": [
       {
         "title": "All 30 NBA Franchises",
-        "description": "Paste the complete list of all 30 NBA teams into the entries editor to include both Eastern and Western conferences."
+        "description": "Paste in all 30 Eastern and Western conference teams for a completely unbiased franchise lottery."
       },
       {
-        "title": "Fantasy Draft Lottery",
-        "description": "Assign weighted odds corresponding to each manager's regular-season standing to hold a realistic draft lottery draw."
+        "title": "Weighted Draft Lottery Odds",
+        "description": "Give lower-ranked fantasy teams higher weights to run a realistic draft lottery in your league."
       }
     ]
   },
   "nfl-picker-wheel": {
-    "essayTitle": "Dominating Madden Rebuilds, Pick'ems & NFL Game Day Decisions",
+    "essayTitle": "Settling Madden Showdowns & Fantasy League Debates",
     "essayParagraphs": [
-      "With 32 fiercely competitive franchises, the NFL delivers pulse-pounding drama every Sunday. But when friends gather for a Madden tournament or fantasy football draft, choosing who plays with which team can lead to heated debates.",
-      "The NFL Team Picker Wheel delivers immediate impartiality. Spin the wheel to decide matchup teams, pick your survivor pool underdog of the week, or assign fantasy football division brackets before the kickoff of week 1.",
-      "Tailgaters and football enthusiasts also use the wheel for friendly prop bets, touchdown squares drawings, and halftime game challenges. With high-contrast team colors and customizable slices, it brings stadium excitement to your screen."
+      "Football arguments are half the fun of Sunday watch parties, but deciding who plays with which team in Madden can take longer than the first quarter. When friends both claim they can win with any roster, spin the wheel and put that confidence to the test.",
+      "The NFL Team Picker Wheel delivers instant fairness. Spin to pick your Madden matchup, choose a bold survivor pool upset of the week, or assign division brackets before week 1 kicks off.",
+      "It is also popular for tailgates, touchdown squares drawings, and deciding which game to stream when you have NFL RedZone running on two screens."
     ],
     "targetKeywords": [
       "nfl picker wheel",
@@ -179,21 +179,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Survivor Pool Underdogs",
-        "description": "Load this week's NFL slate and spin the wheel to pick a fun upset prediction without overthinking the spreads."
+        "title": "Pick Survivor Pool Underdogs",
+        "description": "Load this week's slate of underdogs and let the wheel pick your upset prediction without overthinking the spreads."
       },
       {
-        "title": "Madden Franchise Roulette",
-        "description": "Lock in your multi-season Madden franchise rebuild with whichever team the needle stops on."
+        "title": "Multi-Season Madden Challenge",
+        "description": "Lock into a 5-year rebuild with whichever franchise the needle lands on, no re-rolls allowed."
       }
     ]
   },
   "what-to-eat-wheel": {
-    "essayTitle": "Curing the Universal \"Where Should We Eat?\" Dinner Debate",
+    "essayTitle": "How to End the Endless \"What Should We Eat?\" Argument",
     "essayParagraphs": [
-      "It is a universal modern dilemma: after a long day of work or school, everyone is hungry, but nobody can agree on what to eat. The conversation drags on with endless variations of \"I don't care, whatever you want,\" while appetites turn into frustration.",
-      "The What to Eat Decision Wheel cuts through dinner deadlock in three seconds flat. Loaded with beloved global favorites—including crispy pizza, steaming ramen, authentic tacos, fresh sushi, and hearty burgers—one tap of the wheel makes the choice definitive, fair, and fun.",
-      "Psychologists call this overcoming \"choice paralysis.\" When presented with too many dining options, our brains freeze up. By delegating the decision to an unbiased spinning wheel, groups willingly accept the outcome and enjoy an adventurous, stress-free meal."
+      "\"What do you want for dinner?\" \"I don't know, what do you want?\" \"Anything is fine.\" \"How about pizza?\" \"No, not pizza.\" If this conversation sounds familiar, you are not alone. Dinnertime decision paralysis happens to almost every couple, family, and roommate group when everyone is tired and hungry.",
+      "This wheel cuts through the stalemate in three seconds flat. Loaded with beloved staples like pizza, ramen, tacos, sushi, burgers, and pasta, one tap settles the question cleanly.",
+      "The secret to making it work is simple: agree beforehand that whatever the wheel lands on is the final verdict. You will be surprised by how relieved everyone feels once the decision is out of their hands and dinner is on the way."
     ],
     "targetKeywords": [
       "what to eat decision wheel",
@@ -205,21 +205,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Customize Your Neighborhood Spots",
-        "description": "Replace the generic food categories with your family's top 5 neighborhood takeout spots."
+        "title": "Add Your Local Takeout Spots",
+        "description": "Replace general food categories with the names of your family's 5 favorite neighborhood restaurants."
       },
       {
-        "title": "Honor the First Spin Rule",
-        "description": "Establish a golden house rule: whatever the wheel lands on first is what the group orders, no vetoes allowed!"
+        "title": "The Golden \"First Spin\" Rule",
+        "description": "Agree as a group before spinning: whatever the wheel lands on first is what you order, no vetoes!"
       }
     ]
   },
   "fast-food-picker": {
-    "essayTitle": "Fast Food Roulette: Instant Drive-Thru & Cheat Day Solutions",
+    "essayTitle": "Your Quick Highway Exit & Late-Night Food Decider",
     "essayParagraphs": [
-      "Road trips, late-night study marathons, and weekend cheat meals all have one thing in common: the sudden craving for fast, delicious comfort food. But when one person wants tacos, another craves fried chicken, and someone else is dreaming of a double burger, reaching a verdict is tough.",
-      "The Fast Food Restaurant Picker Wheel ends the drive-thru dispute instantly. Pre-loaded with iconic chains like McDonald's, Wendy's, Taco Bell, Chick-fil-A, Subway, and KFC, the wheel provides an objective tiebreaker that everyone can agree upon.",
-      "Road-tripping families find the fast food spinner especially lifesaver at highway exits with multiple competing franchise options. Spin the wheel, pull off the ramp, and enjoy your meal without the back-and-forth debate."
+      "Picture this: it is 9:30 PM on a road trip, everyone in the car is starving, and the highway sign shows five fast-food spots at the next exit. One person wants tacos, someone wants chicken sandwiches, and someone else wants burgers. If you keep arguing, you will miss the exit entirely.",
+      "The Fast Food Picker Wheel solves the dispute before you reach the ramp. Pre-loaded with favorites like McDonald's, Wendy's, Taco Bell, Chick-fil-A, Subway, and KFC, it gives you an immediate, fair tiebreaker.",
+      "It is just as handy for college dorms, late-night study sessions, or deciding where to grab a quick bite on a short lunch break when you don't want to think."
     ],
     "targetKeywords": [
       "fast food picker wheel",
@@ -231,21 +231,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Highway Exit Tiebreaker",
-        "description": "List the exact restaurants visible at your current highway rest stop and spin to pick your exit stop."
+        "title": "Match Your Highway Exit Options",
+        "description": "Quickly type in the exact restaurants at your upcoming exit so you pull off with confidence."
       },
       {
-        "title": "Cheat Meal Roulette",
-        "description": "Celebrate fitness milestones by letting the wheel pick your weekend reward meal."
+        "title": "Cheat Meal Reward",
+        "description": "Hit a fitness milestone? Let the wheel decide your weekend cheat meal treat."
       }
     ]
   },
   "what-should-i-eat-for-lunch": {
-    "essayTitle": "Ending Lunchtime Decision Fatigue for Office Workers & Students",
+    "essayTitle": "Escaping the Boring 12:30 PM Work Lunch Routine",
     "essayParagraphs": [
-      "At 12:30 PM on a busy workday, the last thing your brain wants is another high-stakes decision. Yet workers and students spend an average of 15 minutes every single day debating what to eat for lunch, often settling on the same boring sandwich out of pure exhaustion.",
-      "The What Should I Eat for Lunch Randomizer Wheel injects variety and excitement back into your midday break. From crisp salads and warm wraps to comforting bento boxes and noodle bowls, the lunch randomizer provides a quick, healthy, and appetizing prompt.",
-      "Coworkers love pulling up the lunch wheel on office tablets. It saves precious break time, encourages exploring nearby food trucks and delis, and turns an everyday chore into a lighthearted social ritual."
+      "When noon rolls around during a busy workday, the last thing your brain wants to do is make another decision. That is why so many of us end up eating the exact same bland turkey sandwich or desk salad four days in a row—pure mental exhaustion.",
+      "This lunch randomizer exists to break that cycle. With crisp salads, warm wraps, hearty bento boxes, noodle bowls, and deli specials on the wheel, you get an appetizing suggestion with one click.",
+      "Coworkers love opening the wheel on office tablets. It saves 15 minutes of debating, helps you explore nearby food trucks, and turns lunch into something you actually look forward to in the middle of your day."
     ],
     "targetKeywords": [
       "what should i eat for lunch randomizer",
@@ -257,21 +257,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Weight Nearby Spots",
-        "description": "Assign higher weights to places within a 5-minute walk when you have limited lunch break time."
+        "title": "Weight Nearby Spots Higher",
+        "description": "Give higher weights to places within a 5-minute walk when you have a short lunch break window."
       },
       {
-        "title": "Healthy vs Indulgent Balance",
-        "description": "Alternate slices between healthy greens and treat meals to keep your diet balanced throughout the week."
+        "title": "Keep a Balanced Menu",
+        "description": "Alternate slices between healthy salad options and treat meals to keep your eating balanced all week."
       }
     ]
   },
   "country-picker-wheel": {
-    "essayTitle": "Explore the Globe: Geography Trivia, GeoGuessr & Travel Dreams",
+    "essayTitle": "From GeoGuessr Grinds to International Dinner Nights",
     "essayParagraphs": [
-      "With nearly 200 recognized sovereign nations on planet Earth, the world is an endlessly fascinating tapestry of cultures, languages, landscapes, and cuisines. The Country Picker Wheel turns global discovery into an interactive spin of the wheel.",
-      "For competitive GeoGuessr players and geography streamers, the country wheel is a staple tool for \"Country Streak Challenges\" and blind playthroughs. Wherever the needle lands, the player must locate landmarks or pinpoint coordinates without skipping.",
-      "Educators and parents also use the country wheel for international culinary nights and Model UN assignments. Spin a country on Monday, research its history on Wednesday, and cook its national dish on Friday night with family."
+      "With nearly 200 sovereign nations around the globe, Earth is packed with incredible cultures, languages, and foods that most of us rarely think about day to day. This wheel turns global exploration into an interactive game.",
+      "GeoGuessr streamers and competitive geography players use it regularly for \"Country Streak Challenges\" where they must identify road signs, landscapes, and landmarks without skipping. It tests your map instincts in a fun, unpredictable way.",
+      "Families and dinner clubs also use it for international cooking challenges: spin a country on Sunday, research its staple dishes during the week, and cook that meal together on Friday night with music from that region."
     ],
     "targetKeywords": [
       "country picker wheel",
@@ -283,21 +283,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Continent Subsets",
-        "description": "Paste countries from a specific continent—like Europe or South America—for targeted geography study."
+        "title": "Study by Continent",
+        "description": "Paste in only European or South American countries when studying for a regional geography exam."
       },
       {
-        "title": "Vacation Bucket List",
-        "description": "Spin to pick your next adventurous holiday destination and explore flight and hotel deals with a fresh perspective."
+        "title": "Spontaneous Travel Bucket List",
+        "description": "Spin to pick your next holiday destination and look up flights with an open, adventurous mind."
       }
     ]
   },
   "state-picker-wheel": {
-    "essayTitle": "Mastering US Geography: 50 States Trivia & Road Trip Inspiration",
+    "essayTitle": "Bringing 50 States Trivia & Road Trips to Life",
     "essayParagraphs": [
-      "From the rugged coastlines of Maine to the sun-drenched valleys of California, each of the 50 United States carries a distinctive history, geography, and cultural identity. The US State Picker Wheel provides an engaging digital tool to learn, test, and explore all 50 states.",
-      "In elementary and middle school social studies classes, memorizing state capitals, abbreviations, and landmark geography can be dry and repetitive. By spinning the state wheel, students take turns identifying state mottos, naming capital cities, or locating the state on a blank map.",
-      "Adventurous travelers and road-trippers also use the 50 states wheel to plan spontaneous cross-country getaways, explore state national parks, or try local culinary specialties from unfamiliar states."
+      "Memorizing state capitals, abbreviations, and landmark geography out of a dry textbook is nobody's idea of fun. Turning it into a spinner game makes students actually want to volunteer their answers in class.",
+      "Spin the wheel, and the student gets 15 seconds to name the capital, point out the state on a blank map, or share one unusual historical fact. It keeps energy high and rewards curious learners.",
+      "Road trippers and adventurers also use the 50 states wheel to plan unpredictable summer vacations, map out national park visits, or try regional snacks from states they have never visited."
     ],
     "targetKeywords": [
       "us state picker wheel",
@@ -309,21 +309,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "State Capital Flashcard Drill",
-        "description": "Spin a state and have students write down its capital city and two-letter postal code within 15 seconds."
+        "title": "Quick Flashcard Drills",
+        "description": "Spin a state and have students write down the capital city and postal code on whiteboards."
       },
       {
-        "title": "Summer Road Trip Route",
-        "description": "Spin 3 non-adjacent states and challenge yourself to map out an epic summer road trip connecting them."
+        "title": "Three-State Road Trip Route",
+        "description": "Spin 3 states and challenge yourself to map an epic driving route connecting them."
       }
     ]
   },
   "fortnite-drop-picker": {
-    "essayTitle": "Drop Cold or Hot: Shaking Up Your Fortnite Battle Royale Landings",
+    "essayTitle": "Stop Dropping at the Same POI Every Match",
     "essayParagraphs": [
-      "Every Fortnite squad has that one player who always wants to land at the exact same location match after match. But dropping at the same spot gets predictable, limits your weapon loot variety, and robs the game of high-adrenaline spontaneity.",
-      "The Fortnite Drop Picker Wheel completely revolutionizes your battle royale sessions. Pre-configured with active Points of Interest (POIs) across the battle island, this wheel forces your squad into unexpected landing encounters, fierce early-game skirmishes, and tactical survival adaptation.",
-      "Streamers frequently use the drop wheel for viewer-engagement challenges, like \"Wheel Decides Our Landings\" streaks, adding tremendous entertainment value and suspense to every drop from the Battle Bus."
+      "Every Fortnite squad has that one friend who marks the exact same corner of the map game after game. Sure, it is safe, but playing it safe does not lead to wild clutch moments or hilarious voice-chat memories.",
+      "This drop wheel forces your squad out of your comfort zone. Whether it drops you straight into the chaos of a central hot drop or sends you out to a quiet coastline fishing shack, you will become a much better player by learning to fight across every terrain on the island.",
+      "Streamers frequently use it for viewer challenges like \"Wheel Decides Our Landings\", giving their community a fun reason to tune in and root for crazy drops."
     ],
     "targetKeywords": [
       "fortnite drop picker wheel",
@@ -335,21 +335,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Hot Drop vs Safe Drop Modes",
-        "description": "Create two custom lists: one for chaotic high-tier hot drops and another for stealthy peripheral loot routes."
+        "title": "Hot Drop vs Stealth Lists",
+        "description": "Keep two custom lists: one for fast, chaotic hot drops and another for stealthy loot routes."
       },
       {
-        "title": "Update with New Chapters",
-        "description": "Easily edit or replace locations as Epic Games releases new map updates, seasons, and named landmarks."
+        "title": "Update with Every New Season",
+        "description": "Easily update named POIs in the entries box as Epic Games changes the map each season."
       }
     ]
   },
   "apex-legends-picker": {
-    "essayTitle": "Master the Outlands: Breaking Out of Your Apex Legends Comfort Zone",
+    "essayTitle": "Break Out of Your Main & Level Up Your Apex Squad",
     "essayParagraphs": [
-      "With a diverse roster of legends spanning Assault, Skirmisher, Recon, Support, and Controller classes, Apex Legends rewards deep tactical versatility. Yet most players lock into their familiar \"main\" and rarely explore the synergistic potential of other legends.",
-      "The Apex Legends Character Picker Wheel forces you and your squad to master new ability kits. Whether you land on the dimensional rifts of Wraith, the healing drones of Lifeline, or the defensive fortresses of Gibraltar, the wheel keeps matches fresh and unpredictable.",
-      "Content creators and competitive trios use the legend spinner for handicap challenge runs, random team composition tournaments, and grinding battle pass legend badges in ranked and casual playlists."
+      "It is easy to lock into your favorite legend in the lobby and play hundreds of games without touching anyone else. But sticking to one character means you miss out on understanding the strengths and weaknesses of the rest of the roster.",
+      "Spinning the legend wheel before you queue forces you and your squadmates to learn new ability timings, defensive utilities, and movement kits. You will understand how enemy legends think because you have played them yourself.",
+      "Trios also use it for handicap challenge runs and knocking out daily battle pass character damage goals in casual playlists without overthinking."
     ],
     "targetKeywords": [
       "apex legends picker wheel",
@@ -361,21 +361,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Three-Man Squad Composition",
-        "description": "Spin three times before queueing into a match to assemble an unconventional trio team comp."
+        "title": "Random Trio Comp",
+        "description": "Spin three times before queueing to assemble an unpredictable squad composition."
       },
       {
-        "title": "Battle Pass Leveling",
-        "description": "Spin through underutilized legends to quickly complete daily and weekly character damage challenges."
+        "title": "Knock Out Battle Pass Challenges",
+        "description": "Spin through underused legends to quickly finish weekly character damage challenges."
       }
     ]
   },
   "truth-or-dare-wheel": {
-    "essayTitle": "Spicing Up Parties, Sleepovers & Game Nights Without Awkward Drama",
+    "essayTitle": "All the Laughs of Truth or Dare Without the Awkwardness",
     "essayParagraphs": [
-      "Truth or Dare is an immortal party classic, played by generations of friends around campfires, in college dorms, and during weekend sleepovers. However, games often stall when players argue over whose turn it is or when someone feels unfairly picked on.",
-      "The Truth or Dare Game Wheel eliminates awkwardness by putting the choice in the hands of an impartial, exciting spinner. Featuring options for Truth, Dare, Double Dare, and Pass, every turn is accompanied by mechanical clicks and celebratory fanfare.",
-      "Hosts can easily customize the slices with lighthearted family-friendly prompts or spicy party dares, ensuring the game fits the exact vibe and comfort level of your gathering."
+      "Truth or Dare has been making people laugh around campfires, dorm rooms, and weekend sleepovers for generations. But games often stall when someone freezes up, takes ten minutes to think of a dare, or feels unfairly picked on.",
+      "The Truth or Dare Wheel keeps the momentum going and keeps the vibe lighthearted. With options for Truth, Dare, Double Dare, and Pass, every turn feels like a real game-show spin with mechanical ticks and fanfare.",
+      "You can easily add your own inside jokes, family-friendly questions, or bold party dares into the entries box, tailoring the game perfectly to the comfort level of your group."
     ],
     "targetKeywords": [
       "truth or dare picker wheel",
@@ -387,21 +387,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Customize Your Own Dares",
-        "description": "Add custom cards like \"Sing a chorus of your favorite song\" or \"Send a voice note to your best friend\"."
+        "title": "Add Your Group's Inside Jokes",
+        "description": "Type in personalized prompts like \"Do an impression of your best friend\" to get everyone laughing."
       },
       {
-        "title": "Include Pass Tokens",
-        "description": "Keep a few \"Pass\" or \"Double Dare\" slices on the wheel to keep the stakes balanced and respectful."
+        "title": "Keep Pass Slices on the Wheel",
+        "description": "Include a few \"Pass\" slices so players have an out if a prompt feels a little too personal."
       }
     ]
   },
   "yes-no-picker-wheel": {
-    "essayTitle": "The Modern 50/50 Decision Maker: Unlocking Subconscious Clarity",
+    "essayTitle": "The Digital Coin Toss That Clears Your Head",
     "essayParagraphs": [
-      "Psychologists have long noted a fascinating phenomenon when people flip a coin: in the split second while the coin is in the air, you suddenly realize which outcome you were secretly hoping for all along.",
-      "The Yes No Picker Wheel acts as your instant digital coin flip, upgraded with 8 balanced alternating slices and cryptographic randomness. Whether you are hesitating over hitting send on an email, debating whether to buy those shoes, or settling a friendly argument, a quick spin cuts through endless overthinking.",
-      "Because it uses JavaScript's cryptographic PRNG rather than pseudorandom approximations, each YES and NO slice maintains an exact 50.0% mathematical probability, guaranteeing fairness on every single spin."
+      "Have you ever noticed what happens right as a flipped coin is in the air? In that split second while it is spinning, your brain suddenly knows what you were secretly hoping for all along.",
+      "That is the true beauty of this Yes/No wheel. When you are stuck overthinking something small—like whether to take that weekend day trip, buy that jacket, or finally clean the garage—give it a quick spin. If the answer feels right, you have your answer; if you feel a flash of disappointment, you also have your answer.",
+      "Because it uses cryptographic browser randomization across 8 balanced alternating slices, every spin has an exact 50.0% mathematical split with zero bias."
     ],
     "targetKeywords": [
       "yes no picker wheel",
@@ -413,21 +413,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "The Air-Flip Test",
-        "description": "Notice how you feel as the wheel slows down. If you find yourself dreading the winning slice, you already know your true answer."
+        "title": "Trust Your First Reaction",
+        "description": "Notice how you feel as the wheel slows down. If you dread the winning slice, your gut already made the choice."
       },
       {
-        "title": "Productivity Tiebreaker",
-        "description": "Use the Yes/No wheel to instantly prioritize between two equal tasks on your daily to-do list."
+        "title": "Daily To-Do List Tiebreaker",
+        "description": "Use the wheel to quickly prioritize between two equally important tasks on your morning list."
       }
     ]
   },
   "color-picker-wheel": {
-    "essayTitle": "Igniting Artistic Inspiration: Color Challenges & Design Palettes",
+    "essayTitle": "Curing Creative Block for Artists & Designers",
     "essayParagraphs": [
-      "Creative block is one of the most frustrating experiences for digital painters, traditional illustrators, and graphic designers. When staring at an infinite RGB color picker, having too many choices often paralyzes the creative process.",
-      "The Color Picker Wheel provides the antidote through creative constraint. Popularized by social media art challenges like the \"Three Color Art Challenge\", artists spin the wheel three times and must complete an entire illustration using only those randomized color hues.",
-      "Educators and interior decorators also use the wheel for teaching color theory, mixing secondary palettes, and exploring unexpected color harmonies for branding, clothing outfits, and home decor."
+      "Staring at an empty digital canvas with a color picker containing 16 million possible shades can be genuinely paralyzing. Too much choice often stops creativity in its tracks.",
+      "That is why the \"Three Color Art Challenge\" is so popular on YouTube, TikTok, and Instagram. Artists spin the wheel three times, lock in those exact shades, and challenge themselves to finish a whole illustration using only that palette. The constraint forces creative shading, contrast, and clever composition.",
+      "It is just as helpful for graphic designers looking for unexpected branding combinations, interior decorators choosing accent pillows, or classroom color theory drills."
     ],
     "targetKeywords": [
       "color picker wheel",
@@ -439,21 +439,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Three-Color Challenge",
-        "description": "Spin 3 distinct color slices and challenge yourself to paint a complete character or landscape using only those colors."
+        "title": "The 3-Color Drawing Challenge",
+        "description": "Spin 3 colors and challenge yourself to paint a complete portrait using only those three hues."
       },
       {
-        "title": "Custom Hex Codes",
-        "description": "You can type custom color names or themes (like Autumn, Neon, or Pastel) directly into the entry list."
+        "title": "Custom Palette Names",
+        "description": "Paste in seasonal themes like Autumn Moss, Sunset Coral, or Electric Lime for targeted design work."
       }
     ]
   },
   "flag-quiz-picker-wheel": {
-    "essayTitle": "Test Your Vexillology Knowledge: Interactive World Flag Quizzes",
+    "essayTitle": "A Fun, Visual Way to Test Your World Flag Smarts",
     "essayParagraphs": [
-      "Flags are the vibrant visual identity of nations, reflecting centuries of history, symbolism, struggle, and cultural pride. The Flag Quiz Picker Wheel transforms the study of flags into an exhilarating guessing game.",
-      "Displaying crisp world flag emojis, the wheel is ideal for geography classrooms, bar trivia hosts, and international student events. When the spinner lands on a flag, contestants must name the nation, state its capital, or identify its continent before the timer runs out.",
-      "With full Unicode support, you can easily add flags from all continents or create specialized regional tournaments across the Americas, Africa, Europe, Asia, and Oceania."
+      "Flags are visual summaries of history, culture, and national pride, but recognizing them quickly takes regular practice. Whether you are hosting trivia night with friends or reviewing for an international relations final, this flag wheel makes testing knowledge feel like a game show.",
+      "The wheel displays clean world flag emojis on every slice. When the needle stops, contestants have 15 seconds to shout out the country, name its capital city, or identify which ocean borders it.",
+      "You can easily paste in flags from a single continent or create global elimination tournaments where answered flags disappear until the wheel is empty."
     ],
     "targetKeywords": [
       "flag quiz picker wheel",
@@ -465,21 +465,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Tiered Difficulty Rules",
-        "description": "Award 1 point for identifying the country, 2 points for its capital city, and 3 points for its national currency."
+        "title": "3-Tier Trivia Scoring",
+        "description": "Award 1 point for the country name, 2 points for the capital, and 3 points for its currency."
       },
       {
         "title": "Elimination Tournaments",
-        "description": "Remove flags after each correct answer until students have successfully identified every nation on the wheel."
+        "description": "Remove correctly guessed flags after each round until the class has identified every country."
       }
     ]
   },
   "mlb-picker-wheel": {
-    "essayTitle": "Baseball Franchise Roulette: MLB The Show Rebuilds & Fan Challenges",
+    "essayTitle": "Take Your Baseball Fandom & Video Games for a Spin",
     "essayParagraphs": [
-      "Baseball is a sport steeped in history, statistics, and intense rivalry. But when starting a multi-year franchise in MLB The Show or picking a team for a fantasy draft, baseball fans often fall back on their hometown favorites.",
-      "The MLB Team Picker Wheel brings unpredictable excitement to your baseball gaming. Let the wheel assign your next 162-game franchise rebuild, challenge you to lead an underdog payroll into the World Series, or decide which cross-division game to stream tonight.",
-      "Fantasy baseball leagues also use the wheel for randomized snake draft orders and regular-season division assignments, ensuring transparent, tamper-proof league governance."
+      "With 162 games in a regular season, baseball is the ultimate marathon. If you are starting a franchise rebuild in MLB The Show or picking a neutral game to watch on MLB.TV, this wheel brings unpredictable fun to your baseball evenings.",
+      "Landing on an underdog club forces you to scout minor league prospects, manage bullpen pitch counts, and make tough trades instead of buying expensive free agents. It is how you truly master the game.",
+      "Fantasy baseball leagues also use the wheel for draft lottery order reveals and assigning division brackets fairly before opening day."
     ],
     "targetKeywords": [
       "mlb picker wheel",
@@ -491,21 +491,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "All 30 Major League Teams",
-        "description": "Import all 30 AL and NL ball clubs to run a full simulated postseason bracket tournament."
+        "title": "Postseason Simulation Bracket",
+        "description": "Put all division leaders on the wheel to run an exciting simulated October playoff run."
       },
       {
         "title": "Ballpark Road Trip Planner",
-        "description": "Spin to select which Major League ballpark you and your baseball buddies will travel to this summer."
+        "description": "Spin to pick which Major League stadium you and your friends will travel to see this summer."
       }
     ]
   },
   "image-picker-wheel": {
-    "essayTitle": "Visual Choice & Creative Storytelling with an Emoji Spinner",
+    "essayTitle": "Visual Storytelling & Quick Drawing Prompts",
     "essayParagraphs": [
-      "Text-only lists are great for names and numbers, but the human brain processes visual images 60,000 times faster than text. The Image & Emoji Picker Wheel harnesses the power of visual icons to create an intuitive, playful decision experience.",
-      "For young children who cannot yet read fluent English, the emoji wheel allows them to pick afternoon snacks, bedtime story characters, or cleanup chores visually. In design workshops, UX facilitators use emoji wheels for rapid mood-boarding and creative ideation sprints.",
-      "Pictionary players also spin the wheel to receive quick drawing prompts without needing physical cards or internet lookups."
+      "Words and numbers are great, but the human brain processes visual icons and emojis almost instantly. The Image and Emoji Picker Wheel uses clean unicode emojis to create an intuitive, playful decision experience.",
+      "Kids who are not reading fluent English yet can easily spin to pick bedtime stories, afternoon fruit snacks, or clean-up games without feeling left out. In design sprints, UX facilitators use emoji wheels for quick 5-minute mood-boarding exercises.",
+      "It also doubles as an instant Pictionary generator: spin an emoji, start a 60-second timer, and see if your team can guess your drawing before time runs out."
     ],
     "targetKeywords": [
       "image picker wheel",
@@ -517,21 +517,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Emoji Storytelling Game",
+        "title": "3-Emoji Story Challenge",
         "description": "Spin 3 random emojis in a row and challenge students to invent a 1-minute creative story linking them together."
       },
       {
-        "title": "Kindergarten Chore Wheel",
-        "description": "Use child-friendly emojis like toys, books, and clothes to make clean-up time an engaging game."
+        "title": "Visual Kindergarten Chores",
+        "description": "Use friendly icons like books, toys, and clothes to turn cleanup time into a fun visual game."
       }
     ]
   },
   "date-picker-wheel": {
-    "essayTitle": "Weekly Scheduling, Chore Rotations & Date Nights Made Frictionless",
+    "essayTitle": "No More Endless Text Threads Trying to Pick a Day",
     "essayParagraphs": [
-      "Organizing schedules across busy families, student study groups, and remote coworkers often devolves into endless calendar ping-pong. Deciding which day to hold a weekly check-in or which night to cook dinner should not take twenty text messages.",
-      "The Date Picker Wheel turns scheduling into an instantaneous, equitable decision. Pre-loaded with all seven days of the week, the wheel helps couples plan spontaneous date nights, assigns weekly household chore duty fairly, and schedules team retrospective meetings.",
-      "You can also paste specific calendar dates (such as November 12, 19, 26) to select project milestone check-ins or drawing dates transparently."
+      "\"Are you free Tuesday?\" \"No, how about Thursday?\" \"Thursday is bad, what about Friday?\" Trying to schedule a simple dinner with friends or family should not take three days of back-and-forth group texts.",
+      "This date wheel cuts right through the scheduling deadlock. Spin to pick a day, hold everyone to it, and get on with your week. It works just as well for couples planning a spontaneous date night or families dividing up weekly chore duty fairly.",
+      "You can also paste in specific calendar dates (like October 14, 21, 28) for project milestone check-ins or drawing dates without anyone suspecting bias."
     ],
     "targetKeywords": [
       "date picker wheel",
@@ -543,21 +543,21 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Equitable Chore Distribution",
-        "description": "Assign family members to days of the week for dishwashing and trash duty without arguments."
+        "title": "Fair Weekly Chore Rotation",
+        "description": "Assign family members to days of the week for trash and dish duty without arguments."
       },
       {
         "title": "Spontaneous Date Night",
-        "description": "Remove busy workdays and spin between Friday, Saturday, and Sunday to pick your dedicated couple night."
+        "description": "Remove busy workdays and spin between Friday, Saturday, and Sunday to lock in quality time."
       }
     ]
   },
   "instagram-comment-picker": {
-    "essayTitle": "Transparent Social Media Giveaways: How to Run Verified Contests",
+    "essayTitle": "Giveaways Your Followers Can Actually Trust",
     "essayParagraphs": [
-      "Giveaways and contests are among the most effective growth strategies for Instagram creators, brands, and influencers. However, nothing damages audience trust faster than accusations of a rigged or unfair winner selection process.",
-      "The Instagram Comment Picker Wheel provides a 100% transparent, visually verifiable way to select contest winners. By screen-recording the wheel spinning live in your Instagram Stories, Reels, or Live streams, your audience sees the needle land on the winner in real time with authentic 60 FPS canvas motion.",
-      "With Real Picker Wheel's Elimination Mode, creators can effortlessly pick multiple tiered prize winners (1st place grand prize, 2nd place runner-up, 3rd place merchandise) without worrying about duplicate drawings or repeat winners."
+      "Social media giveaways are one of the fastest ways to grow your followers, but audience trust is fragile. If you simply announce a winner in a text caption, followers naturally wonder if you just picked a friend or an alt account.",
+      "The Instagram Comment Picker Wheel makes your drawings 100% transparent. By screen-recording the wheel spinning live in your Instagram Stories, Reels, or Live stream, your community sees the needle land on the winning username in real time with authentic physics and confetti.",
+      "Turn on Elimination Mode to easily pick multiple prize tiers (1st place grand prize, 2nd place gift card, 3rd place merchandise) without accidental duplicate drawings."
     ],
     "targetKeywords": [
       "instagram comment picker wheel",
@@ -569,11 +569,11 @@ export const TOOL_GUIDES: Record<string, ToolGuide> = {
     ],
     "proTips": [
       {
-        "title": "Record Live for Story Proof",
-        "description": "Screen-record the wheel spin directly on your phone and post it to Instagram Stories to prove total impartiality."
+        "title": "Record Live in Stories for Proof",
+        "description": "Screen-record the spin directly on your phone and post it to Instagram Stories to prove total fairness."
       },
       {
-        "title": "Multi-Prize Draws with Elimination",
+        "title": "Elimination for Multiple Prizes",
         "description": "Enable \"Remove winner after each spin\" to award 1st, 2nd, and 3rd place prizes without duplicate entries."
       }
     ]

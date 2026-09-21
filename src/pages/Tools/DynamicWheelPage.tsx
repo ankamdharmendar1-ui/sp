@@ -83,7 +83,7 @@ export function DynamicWheelPage() {
             {guide.targetKeywords && guide.targetKeywords.length > 0 && (
               <div className="pt-4 border-t border-[#e4d9c8] space-y-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#5c6a72]">
-                  Target Search Queries &amp; Related Keywords:
+                  Popular Searches &amp; Community Tags:
                 </span>
                 <div className="flex flex-wrap gap-2 pt-1">
                   {guide.targetKeywords.map((kw, idx) => (
@@ -104,7 +104,7 @@ export function DynamicWheelPage() {
         {guide && guide.proTips && guide.proTips.length > 0 && (
           <section className="space-y-6">
             <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
-              Pro-Tips for Better Spins
+              Helpful Tips &amp; Tricks
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {guide.proTips.map((tip, idx) => (
@@ -120,10 +120,10 @@ export function DynamicWheelPage() {
           </section>
         )}
 
-        {/* Section 2: How to Use */}
+        {/* Section 4: How to Use */}
         <section className="space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#10232b]">
-            How to Use This Wheel
+            3 Easy Steps to Spin
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="rounded-2xl border border-[#d7cfc2] bg-white p-5 shadow-sm space-y-2">
